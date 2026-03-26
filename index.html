@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Humane Foundation | Impact through Empathy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;family=Gloria+Hallelujah&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-accent": "#FFD700",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#fcf9f8",
+                        "on-background": "#121212",
+                        "stone": {
+                            50: "#fcfcfc",
+                            100: "#f5f5f4",
+                            200: "#e7e5e4",
+                            400: "#a8a29e",
+                            500: "#78716c",
+                            600: "#57534e",
+                            800: "#292524",
+                            900: "#1c1917",
+                            950: "#0c0a09"
+                        }
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "script": ["Gloria Hallelujah", "cursive"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "2xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .editorial-spacing {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(18, 18, 18, 0.8) 0%, rgba(18, 18, 18, 0.4) 50%, transparent 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-accent/30">
+<!-- TopNavBar Shared Component -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-900/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(28,27,27,0.06)] dark:shadow-none transition-colors duration-300">
+<div class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<a class="text-2xl font-black tracking-tighter text-stone-900 dark:text-stone-50 font-['Plus_Jakarta_Sans']" href="index.html">Humane Foundation</a>
+<div class="hidden md:flex items-center gap-12 font-['Plus_Jakarta_Sans'] tracking-tight font-medium uppercase text-sm">
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors duration-300" href="code.html">Contact</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="bg-primary-accent text-stone-950 px-7 py-2.5 rounded-lg font-headline font-bold scale-100 active:scale-95 transition-transform shadow-lg shadow-primary-accent/20">
+                Donate
+            </button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section: High Impact, Refined Hierarchy -->
+<section class="relative min-h-screen flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of a smiling child in warm golden light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASWTefK3-sm6X-f3aQmTeQtJlYLuRnXTxjMY9Pahs_0SepZaufAgqRKz8xZMv8TIQ7SIhmqQfVSkhdxCUdry_j7peDSUPxR3d90_6zBZ-JgMzY4vSH_RB9ZL7T7YctvI7godBaMJLINIG3GsIf-INfbYKAWOIj4il2355JSdlmdTPa1G3hXf-Q5KaWpWiBg-tRQ_yZf-tX7hL6p2Cf3oNoezYvDLCQR-1W_kO8i01vodjKXw68y8RWsWImxXDW2y8khOAtaXmY9M8"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full pt-20">
+<div class="max-w-3xl">
+<div class="flex items-center gap-3 mb-6">
+<span class="w-12 h-[1px] bg-primary-accent"></span>
+<span class="font-headline font-bold tracking-widest text-primary-accent text-xs uppercase">Est. 2012</span>
+</div>
+<h1 class="text-white font-headline text-6xl md:text-8xl font-extrabold tracking-tight leading-[1.05] mb-8">
+                    Every Child <br/>Deserves a <br/><span class="text-primary-accent">Future.</span>
+</h1>
+<p class="text-white/80 text-lg md:text-xl font-body max-w-xl mb-12 leading-relaxed">
+                    A global non-profit collective dedicated to breaking cycles of poverty through radical transparency and systematic intervention in education and healthcare.
+                </p>
+<div class="flex flex-wrap gap-5">
+<button class="bg-primary-accent text-stone-950 px-10 py-5 rounded-xl font-headline font-bold text-lg hover:shadow-2xl hover:shadow-primary-accent/40 transition-all transform hover:-translate-y-1">
+                        Donate Now
+                    </button>
+<button class="bg-white/5 backdrop-blur-md border border-white/20 text-white px-10 py-5 rounded-xl font-headline font-bold text-lg hover:bg-white/10 transition-all">
+                        Join the Movement
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission Overview: More Whitespace, Editorial Feel -->
+<section class="editorial-spacing px-8 bg-stone-50">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex flex-col lg:flex-row justify-between items-start gap-16 mb-24">
+<div class="max-w-3xl">
+<h2 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-stone-900 mb-8 leading-tight">
+                        Changing the narrative, <br/>one life at a time.
+                    </h2>
+<p class="text-stone-500 text-xl leading-relaxed max-w-2xl font-light">
+                        We don't just provide aid; we build ecosystems of agency. By addressing root causes at the grassroots level, we ensure that progress is sustainable and community-led.
+                    </p>
+</div>
+<div class="pt-4">
+<div class="flex flex-col items-end">
+<span class="font-script text-stone-400 text-3xl mb-2 transform rotate-3">Impact is measurable</span>
+<div class="w-32 h-1 bg-primary-accent/20"></div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<!-- Education -->
+<div class="group border-t border-stone-200 pt-10">
+<div class="text-stone-300 font-headline text-4xl mb-6 font-bold group-hover:text-primary-accent transition-colors">01</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Universal Education</h3>
+<p class="text-stone-500 leading-relaxed font-light">Bridging the digital divide by building solar-powered computer labs in remote villages.</p>
+</div>
+<!-- Healthcare -->
+<div class="group border-t border-stone-200 pt-10">
+<div class="text-stone-300 font-headline text-4xl mb-6 font-bold group-hover:text-primary-accent transition-colors">02</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Community Health</h3>
+<p class="text-stone-500 leading-relaxed font-light">Scalable mobile clinics providing essential care to over 100,000 families annually.</p>
+</div>
+<!-- Empowerment -->
+<div class="group border-t border-stone-200 pt-10">
+<div class="text-stone-300 font-headline text-4xl mb-6 font-bold group-hover:text-primary-accent transition-colors">03</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Economic Agency</h3>
+<p class="text-stone-500 leading-relaxed font-light">Vocational training and micro-grants that empower women to lead local economies.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Latest Campaigns: Sophisticated Asymmetric Layout -->
+<section class="editorial-spacing px-8 bg-white">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex items-end justify-between mb-20">
+<div>
+<h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight text-stone-900">Current Initiatives</h2>
+<div class="h-1 w-20 bg-primary-accent mt-4"></div>
+</div>
+<a class="text-stone-900 font-bold group flex items-center gap-2" href="#">
+                    View All Campaigns 
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Main Feature -->
+<div class="lg:col-span-7 group relative h-[600px] overflow-hidden rounded-2xl">
+<img class="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Children in classroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqdiJ0sVWKQarwCRzN6Y-LUcsKn0zddqUEvVbDrhnlYHlLkeFES4EPt-CdngyNMPmUSw7SSpndW_nWP15iBjUWSzFSJHTL2ZC2aQeKIW6qTZ9QQ9jGOqFxhO8eFIN6aRe-UhK6AcE4J1ZdYOHNrxoM2NE5d7ZgDsvhI-s2tb6gGFLycndghAZ9n6MrsTdLZmT6klKT4c6n9bfGKmAnYFx5XOUO6Po0hOLF-BdP-HZr99JDQ79oZsXh1nvOCyDIeiyr4pn75xMLKwY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10 w-full">
+<span class="text-primary-accent font-bold tracking-widest uppercase text-xs mb-4 block">Education Priority</span>
+<h3 class="text-white font-headline text-4xl font-bold mb-4">The Rural Digital Literacy Project</h3>
+<p class="text-white/70 max-w-lg mb-8">Deploying satellite internet and sustainable tech to 50 communities this quarter.</p>
+<div class="flex items-center gap-6">
+<div class="flex-1 h-1 bg-white/20 rounded-full overflow-hidden">
+<div class="h-full bg-primary-accent w-3/4"></div>
+</div>
+<span class="text-white font-bold whitespace-nowrap">75% Funded</span>
+</div>
+</div>
+</div>
+<!-- Side Grid -->
+<div class="lg:col-span-5 grid grid-rows-2 gap-8">
+<div class="bg-stone-50 p-10 rounded-2xl border border-stone-200/60 flex flex-col justify-between">
+<div>
+<span class="text-stone-400 font-bold text-xs uppercase tracking-widest mb-6 block">Emergency Response</span>
+<h3 class="font-headline text-2xl font-bold text-stone-900 mb-4">Coastal Water Desalination</h3>
+<p class="text-stone-500 font-light leading-relaxed">Providing immediate clean water solutions to 12,000 households affected by saline intrusion.</p>
+</div>
+<button class="w-full py-4 border border-stone-900 text-stone-900 font-bold rounded-xl hover:bg-stone-900 hover:text-white transition-all mt-8">Support the Crisis</button>
+</div>
+<div class="bg-primary-accent/5 p-10 rounded-2xl flex flex-col justify-between relative overflow-hidden group">
+<div class="relative z-10">
+<h3 class="font-headline text-2xl font-bold text-stone-900 mb-4">Become a Guardian</h3>
+<p class="text-stone-600 font-light leading-relaxed">Monthly supporters are the backbone of our long-term stability. Join 24,000 others today.</p>
+<button class="mt-8 bg-stone-950 text-white px-8 py-4 rounded-xl font-bold hover:bg-stone-800 transition-colors">Start Giving</button>
+</div>
+<span class="absolute right-[-5%] bottom-[-10%] text-[140px] font-black text-stone-900/5 select-none leading-none transform -rotate-12 group-hover:rotate-0 transition-transform duration-700">HOPE</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Impact Stories: Cinematic Editorial -->
+<section class="editorial-spacing px-8 bg-stone-50 overflow-hidden">
+<div class="max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<div class="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Portrait of Samuel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY6lYJtBJtiawBSg3eMZ1g2nrUtfjmJl88_LP8nHidY-0TGDk9U5bVx2Bm_vYBDim3l3J1jGSpxZ1y2zwjbRRfQ8NhjtKph40AQDviBQsp1SdxzM316xoHPFrh3f5cAZXMxkLAhMIyGDLelD5tObp86OeP0PdaVUlpy3B-RJUkTrkWn9BYHFFpZ93Tnd3VmBf1Vedst6njSyCmTRjXcuxrB7M-iEJHXGgE42vJAMwJkVym-9dL9DiChm0Cx1iZDgbjrkbIMOcEJo0"/>
+</div>
+<div class="absolute -bottom-12 -right-12 bg-white p-10 rounded-2xl shadow-xl max-w-sm border border-stone-100 hidden md:block">
+<p class="font-script text-primary-accent text-2xl mb-4">"I can finally dream."</p>
+<p class="text-stone-500 text-sm leading-relaxed italic mb-6">"The vocational scholarship didn't just give me a skill, it gave me back my dignity and a path to lead."</p>
+<p class="font-bold text-stone-900">— Samuel, Class of '23</p>
+</div>
+</div>
+<div class="lg:pl-12">
+<span class="text-stone-400 font-bold tracking-widest uppercase text-xs mb-6 block">Featured Story</span>
+<h3 class="font-headline text-5xl font-extrabold text-stone-900 leading-tight mb-10">From a small village to <br/>a University Bench.</h3>
+<p class="text-stone-500 text-xl leading-relaxed mb-10 font-light">
+                        Amara was the first girl in her community to complete secondary education. Through our 'Lead Her' program, she received the mentoring and financial support necessary to pursue an engineering degree. Today, she’s back in her village designing low-cost irrigation systems for local farmers.
+                    </p>
+<a class="inline-flex items-center gap-4 text-stone-900 font-extrabold group text-lg" href="#">
+                        Read Amara's Full Journey
+                        <span class="material-symbols-outlined p-2 rounded-full border border-stone-900 group-hover:bg-stone-900 group-hover:text-white transition-all" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Transparency/Stats: Clean & Modern -->
+<section class="bg-stone-950 text-white editorial-spacing px-8">
+<div class="max-w-7xl mx-auto text-center">
+<h2 class="font-headline text-5xl md:text-6xl font-black tracking-tighter mb-16 italic opacity-90">Transparency is our promise.</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12 border-y border-white/10 py-20">
+<div>
+<div class="text-5xl md:text-7xl font-bold text-primary-accent mb-4 tracking-tighter">92%</div>
+<div class="text-stone-400 font-medium tracking-wide text-sm uppercase">Funds to Programs</div>
+</div>
+<div>
+<div class="text-5xl md:text-7xl font-bold text-primary-accent mb-4 tracking-tighter">150k+</div>
+<div class="text-stone-400 font-medium tracking-wide text-sm uppercase">Lives Touched</div>
+</div>
+<div>
+<div class="text-5xl md:text-7xl font-bold text-primary-accent mb-4 tracking-tighter">12</div>
+<div class="text-stone-400 font-medium tracking-wide text-sm uppercase">Global Regions</div>
+</div>
+<div>
+<div class="text-5xl md:text-7xl font-bold text-primary-accent mb-4 tracking-tighter">A+</div>
+<div class="text-stone-400 font-medium tracking-wide text-sm uppercase">NGO Rating</div>
+</div>
+</div>
+<div class="mt-20 flex flex-col items-center">
+<p class="text-stone-500 max-w-2xl text-lg leading-relaxed mb-12">We believe in radical accountability. Our financial records are independently audited and publicly available for review at any time.</p>
+<button class="bg-white text-stone-950 px-12 py-5 rounded-full font-bold hover:bg-primary-accent transition-all transform hover:scale-105">View 2023 Annual Report</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shared Component -->
+<footer class="bg-stone-50 dark:bg-stone-950 w-full border-t border-stone-200/20 dark:border-stone-800/20 font-['Plus_Jakarta_Sans'] text-sm text-stone-600 dark:text-stone-400">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<div class="text-lg font-bold text-stone-900 dark:text-stone-100 mb-6">Humane Foundation</div>
+<p class="mb-8 leading-relaxed opacity-80">Empowering communities through empathy and radical transparency since 2012.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-stone-400 hover:text-yellow-600 cursor-pointer transition-colors" data-icon="public">public</span>
+<span class="material-symbols-outlined text-stone-400 hover:text-yellow-600 cursor-pointer transition-colors" data-icon="mail">mail</span>
+<span class="material-symbols-outlined text-stone-400 hover:text-yellow-600 cursor-pointer transition-colors" data-icon="share">share</span>
+</div>
+</div>
+<div>
+<h4 class="font-semibold text-stone-900 dark:text-stone-100 mb-6 uppercase tracking-widest text-[10px]">Programs</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors" href="#">Digital Literacy</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors" href="#">Community Health</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors" href="#">Economic Agency</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors" href="#">Transparency</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold text-stone-900 dark:text-stone-100 mb-6 uppercase tracking-widest text-[10px]">Legal &amp; Governance</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors" href="#">Financials</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold text-stone-900 dark:text-stone-100 mb-6 uppercase tracking-widest text-[10px]">Newsletter</h4>
+<p class="text-stone-500 mb-6 text-xs">Join our monthly impact update.</p>
+<div class="flex gap-2">
+<input class="bg-white dark:bg-stone-900 border-stone-200 dark:border-stone-800 rounded-lg px-4 py-2.5 text-xs w-full focus:ring-1 focus:ring-yellow-500 outline-none transition-all" placeholder="Email address" type="email"/>
+<button class="bg-primary-accent text-stone-950 px-5 py-2.5 rounded-lg font-bold text-xs hover:shadow-lg transition-all">Join</button>
+</div>
+</div>
+</div>
+<div class="border-t border-stone-200/20 dark:border-stone-800/20 py-8 text-center">
+<p class="text-[10px] uppercase tracking-widest opacity-60">© 2024 Humane Foundation. All rights reserved. Registered NGO.</p>
+</div>
+</footer>
+<!-- Floating Urgency Bar -->
+<div class="fixed bottom-8 left-1/2 -translate-x-1/2 w-[90%] max-w-2xl glass-nav bg-stone-950/90 text-white p-5 rounded-2xl shadow-2xl z-40 flex flex-col sm:flex-row items-center justify-between gap-6 border border-white/10">
+<div class="flex items-center gap-4">
+<div class="flex -space-x-3">
+<img alt="Donor 1" class="w-10 h-10 rounded-full border-2 border-stone-950 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-PJP4ce6L90FRqowNGpEcsOltE9EtLtiVfRN1ryNvFql9I1ToD8NO4VsUdNI-aAVadk0iY70QBMf3DLkPNcVA_2TXU0YGkBFLL8Fz-SJ2i4R1RXexfl4QvK1EmTmf714XTuE41Js302Pf1lELAZhw97mI5QKEF-wPfaiUB0mMXgktokrvEOfEP47QdHQ4SyzMsNzxXIXStebyQb7CVoMjlsThrzssuLvsqicGe0io-fKaTQCXuAmolKl9Bs45U-w0n2Z6M7Fe-T4"/>
+<img alt="Donor 2" class="w-10 h-10 rounded-full border-2 border-stone-950 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPa-_LIo7XUbyaX4FPMsX0xJPyFOHN9wHSBUbBMpCiSj29SUDuRXBtOzdkcCv0PJojaiHx4d70VMxJvT9hNLp_N1bjHBb_-cHoF-QmxAjtuF50wshSY0GXWa4sYhX6BZ4Q2f4utdFr-E6U0cwSpP7oc9xpOwx91W8WJrxeD58sQ9dp4oL-gNlRk8FSZ3W17a8NRcMCGNOvFG5OV0oVgAHkKjfMOSmvzBfESwp46TVhkQElGrTiFDSYwhcIk6z9xdqDQBdefcgR07c"/>
+<div class="w-10 h-10 rounded-full bg-primary-accent border-2 border-stone-950 flex items-center justify-center text-[10px] font-black text-stone-950">+24k</div>
+</div>
+<p class="text-xs font-medium text-stone-300">Join 24,000+ monthly supporters today.</p>
+</div>
+<button class="bg-primary-accent text-stone-950 px-8 py-3 rounded-xl font-headline font-extrabold text-sm shadow-xl shadow-primary-accent/10 whitespace-nowrap transform hover:scale-105 transition-all">Start Monthly Giving</button>
+</div>
+</body></html>
