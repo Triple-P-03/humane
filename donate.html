@@ -64,18 +64,15 @@
     </style>
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-primary/30">
-<!-- Navigation -->
-<nav class="fixed top-0 w-full z-50 glass-nav border-b border-gray-100">
-<div class="flex justify-between items-center px-8 py-5 max-w-7xl mx-auto">
-<div class="text-2xl font-extrabold tracking-tighter text-slate-900 font-headline">Humane Foundation</div>
-<div class="hidden md:flex items-center space-x-10">
-<a class="text-sm font-bold tracking-tight text-slate-600 hover:text-primary transition-colors" href="#">Our Impact</a>
-<a class="text-sm font-bold tracking-tight text-slate-600 hover:text-primary transition-colors" href="#">Programs</a>
-<a class="text-sm font-bold tracking-tight text-slate-600 hover:text-primary transition-colors" href="#">Transparency</a>
-<a class="text-sm font-bold tracking-tight text-slate-600 hover:text-primary transition-colors" href="#">News</a>
+<!-- Top Navigation Shared -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-900/80 backdrop-blur-xl shadow-sm border-b border-stone-200/50 dark:border-stone-800/50 transition-colors duration-300 font-['Plus_Jakarta_Sans']">
+<div class="flex justify-between items-center px-8 py-5 max-w-screen-2xl mx-auto">
+<a class="text-2xl font-black tracking-tighter text-stone-900 dark:text-stone-50" href="index.html">Humane Foundation</a>
+<div class="hidden md:flex items-center gap-12 tracking-tight font-bold uppercase text-sm">
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors duration-300" href="code.html">Contact</a>
 </div>
-<div class="flex items-center space-x-6">
-<button class="bg-primary text-on-primary px-8 py-3 rounded-full text-sm font-bold tracking-tight hover:shadow-lg hover:scale-105 transition-all duration-300">Donate</button>
+<div class="flex items-center gap-6">
+<a href="donate.html" class="bg-[#FFD700] text-black px-7 py-2.5 rounded-xl font-bold text-sm tracking-tight hover:shadow-lg hover:scale-105 active:scale-95 transition-all inline-block text-center">Donate</a>
 </div>
 </div>
 </nav>
@@ -123,20 +120,38 @@
 </div>
 </div>
 <!-- Right: Impact Visual Gallery -->
-<div class="relative rounded-[2rem] overflow-hidden bg-slate-100 aspect-[4/5] lg:aspect-auto lg:h-[700px] slide-up">
-<div class="absolute inset-0 transition-transform duration-1000">
-<img alt="Impact Story" class="w-full h-full object-cover" data-alt="Children smiling in a bright classroom with modern desks and large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCnEl1_KhwvQfaJhgrZMYGNuo1M7oBBWf4ClZevJMa9u0kcQjd-BOtRVudJ9GQP2IDDztnf9xQe3NYb86nY-n1Aky4djpSgRvwjf3DMA6COkKGwVDTDm07u4VVoRtKLMNiTrqc9GE2qR9qVJcJCfQC0NSLnhQO11Es3kRlWRDHRwXwwA_jwv6WtljuwNuZZ97lRNIwuos1iqwRNr6eXWTc3JLSlj64BVT9FDbRowgc5Cd-0weZEwJtfl8yn71YjdDAOSRAfyDenrE"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-12">
-<span class="inline-block bg-primary text-on-primary text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded mb-4 w-fit">Education Impact</span>
-<h2 class="text-3xl font-extrabold text-white font-headline leading-tight">Providing safe learning environments for 12,000+ students.</h2>
-</div>
-</div>
-<!-- Simple Gallery Indicators -->
-<div class="absolute bottom-8 right-12 flex space-x-2">
-<div class="w-8 h-1 bg-primary rounded-full"></div>
-<div class="w-8 h-1 bg-white/30 rounded-full"></div>
-<div class="w-8 h-1 bg-white/30 rounded-full"></div>
-</div>
+<div class="relative rounded-[2rem] overflow-hidden bg-slate-100 aspect-[4/5] lg:aspect-auto lg:h-[700px] slide-up" id="slider-container">
+    <!-- Slide 1 -->
+    <div class="absolute inset-0 transition-opacity duration-1000 opacity-100 z-10 slider-slide">
+        <img alt="Impact Story" class="w-full h-full object-cover" data-alt="Children smiling in a bright classroom with modern desks and large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCnEl1_KhwvQfaJhgrZMYGNuo1M7oBBWf4ClZevJMa9u0kcQjd-BOtRVudJ9GQP2IDDztnf9xQe3NYb86nY-n1Aky4djpSgRvwjf3DMA6COkKGwVDTDm07u4VVoRtKLMNiTrqc9GE2qR9qVJcJCfQC0NSLnhQO11Es3kRlWRDHRwXwwA_jwv6WtljuwNuZZ97lRNIwuos1iqwRNr6eXWTc3JLSlj64BVT9FDbRowgc5Cd-0weZEwJtfl8yn71YjdDAOSRAfyDenrE"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-12">
+            <span class="inline-block bg-primary text-on-primary text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded mb-4 w-fit">Education Impact</span>
+            <h2 class="text-3xl font-extrabold text-white font-headline leading-tight">Providing safe learning environments for 12,000+ students.</h2>
+        </div>
+    </div>
+    <!-- Slide 2 -->
+    <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 z-0 slider-slide">
+        <img alt="Emergency Response" class="w-full h-full object-cover" data-alt="Emergency medical supplies and clinics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASWTefK3-sm6X-f3aQmTeQtJlYLuRnXTxjMY9Pahs_0SepZaufAgqRKz8xZMv8TIQ7SIhmqQfVSkhdxCUdry_j7peDSUPxR3d90_6zBZ-JgMzY4vSH_RB9ZL7T7YctvI7godBaMJLINIG3GsIf-INfbYKAWOIj4il2355JSdlmdTPa1G3hXf-Q5KaWpWiBg-tRQ_yZf-tX7hL6p2Cf3oNoezYvDLCQR-1W_kO8i01vodjKXw68y8RWsWImxXDW2y8khOAtaXmY9M8"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-12">
+            <span class="inline-block bg-primary text-on-primary text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded mb-4 w-fit">Emergency Care</span>
+            <h2 class="text-3xl font-extrabold text-white font-headline leading-tight">Delivering immediate healthcare access and clean water.</h2>
+        </div>
+    </div>
+    <!-- Slide 3 -->
+    <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 z-0 slider-slide">
+        <img alt="Economic Agency" class="w-full h-full object-cover" data-alt="Vocational training and community building" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqdiJ0sVWKQarwCRzN6Y-LUcsKn0zddqUEvVbDrhnlYHlLkeFES4EPt-CdngyNMPmUSw7SSpndW_nWP15iBjUWSzFSJHTL2ZC2aQeKIW6qTZ9QQ9jGOqFxhO8eFIN6aRe-UhK6AcE4J1ZdYOHNrxoM2NE5d7ZgDsvhI-s2tb6gGFLycndghAZ9n6MrsTdLZmT6klKT4c6n9bfGKmAnYFx5XOUO6Po0hOLF-BdP-HZr99JDQ79oZsXh1nvOCyDIeiyr4pn75xMLKwY"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-12">
+            <span class="inline-block bg-primary text-on-primary text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded mb-4 w-fit">Economic Agency</span>
+            <h2 class="text-3xl font-extrabold text-white font-headline leading-tight">Vocational grants empowering communities to self-reliance.</h2>
+        </div>
+    </div>
+    
+    <!-- Simple Gallery Indicators -->
+    <div class="absolute bottom-8 right-12 flex space-x-2 z-20">
+        <div class="w-8 h-1 bg-primary rounded-full slider-indicator transition-colors duration-500"></div>
+        <div class="w-8 h-1 bg-white/30 rounded-full slider-indicator transition-colors duration-500"></div>
+        <div class="w-8 h-1 bg-white/30 rounded-full slider-indicator transition-colors duration-500"></div>
+    </div>
 </div>
 </div>
 </section>
@@ -165,15 +180,39 @@
 <!-- Footer -->
 <footer class="bg-slate-50 border-t border-slate-200">
 <div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto space-y-6 md:space-y-0">
-<div class="text-lg font-bold text-slate-900 font-headline">Humane Foundation</div>
+<a href="index.html" class="text-lg font-bold text-slate-900 font-headline">Humane Foundation</a>
 <div class="flex flex-wrap justify-center gap-8">
-<a class="text-[10px] font-bold uppercase tracking-widest text-slate-500 hover:text-primary transition-colors" href="#">Privacy Policy</a>
-<a class="text-[10px] font-bold uppercase tracking-widest text-slate-500 hover:text-primary transition-colors" href="#">Annual Reports</a>
-<a class="text-[10px] font-bold uppercase tracking-widest text-slate-500 hover:text-primary transition-colors" href="#">Contact Us</a>
+<a class="text-[10px] font-bold uppercase tracking-widest text-slate-500 hover:text-primary transition-colors" href="code.html">Contact Us</a>
 </div>
 <p class="text-[10px] font-bold uppercase tracking-widest text-slate-400">
             © 2024 Humane Foundation.
         </p>
 </div>
 </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const slides = document.querySelectorAll('.slider-slide');
+        const indicators = document.querySelectorAll('.slider-indicator');
+        if (!slides.length) return;
+        
+        let currentSlide = 0;
+        
+        setInterval(() => {
+            // Hide current slide
+            slides[currentSlide].classList.remove('opacity-100', 'z-10');
+            slides[currentSlide].classList.add('opacity-0', 'z-0');
+            indicators[currentSlide].classList.remove('bg-primary');
+            indicators[currentSlide].classList.add('bg-white/30');
+            
+            // Move to next slide
+            currentSlide = (currentSlide + 1) % slides.length;
+            
+            // Show next slide
+            slides[currentSlide].classList.remove('opacity-0', 'z-0');
+            slides[currentSlide].classList.add('opacity-100', 'z-10');
+            indicators[currentSlide].classList.remove('bg-white/30');
+            indicators[currentSlide].classList.add('bg-primary');
+        }, 4000); // Change image every 4 seconds
+    });
+</script>
 </body></html>

@@ -87,116 +87,188 @@
     </style>
 </head>
 <body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
-<!-- Top Navigation -->
-<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-950/80 backdrop-blur-xl">
-<div class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
-<a class="text-2xl font-black tracking-tighter text-stone-900 dark:text-stone-50 font-['Plus_Jakarta_Sans']" href="index.html">Humane Foundation</a>
-<div class="hidden md:flex items-center gap-12 font-['Plus_Jakarta_Sans'] tracking-tight font-medium uppercase text-sm">
-<a class="text-stone-900 dark:text-white border-b-2 border-primary-container pb-1 transition-colors duration-300" href="code.html">Contact</a>
+<!-- Top Navigation Shared -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-900/80 backdrop-blur-xl shadow-sm border-b border-stone-200/50 dark:border-stone-800/50 transition-colors duration-300 font-['Plus_Jakarta_Sans']">
+<div class="flex justify-between items-center px-8 py-5 max-w-screen-2xl mx-auto">
+<a class="text-2xl font-black tracking-tighter text-stone-900 dark:text-stone-50" href="index.html">Humane Foundation</a>
+<div class="hidden md:flex items-center gap-12 tracking-tight font-bold uppercase text-sm">
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors duration-300" href="code.html">Contact</a>
 </div>
 <div class="flex items-center gap-6">
-<button class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-xl font-bold text-sm tracking-tight transition-all active:opacity-70 active:scale-95">
-                Donate Now
-            </button>
+<a href="donate.html" class="bg-[#FFD700] text-black px-7 py-2.5 rounded-xl font-bold text-sm tracking-tight hover:shadow-lg hover:scale-105 active:scale-95 transition-all inline-block text-center">Donate</a>
 </div>
 </div>
 </nav>
 <main class="pt-32 pb-24">
-<!-- Hero Section -->
-<header class="px-8 max-w-screen-2xl mx-auto mb-24">
+<!<!-- Hero Section -->
+<header class="px-8 max-w-screen-2xl mx-auto mb-16">
 <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
 <div class="md:col-span-8">
-<span class="font-label uppercase tracking-[0.2em] text-primary text-sm font-bold block mb-4">Connect With Us</span>
-<h1 class="font-headline text-6xl md:text-8xl font-bold tracking-tighter text-on-surface leading-[0.9]">
-                        Let's start a <br/>
-<span class="text-primary-container bg-on-surface inline-block px-4 py-1 mt-2">Conversation.</span>
+<span class="font-label uppercase tracking-[0.2em] text-primary text-sm font-bold block mb-4">Our People</span>
+<h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-on-surface leading-[0.9]">
+                        Meet Our <br/>
+<span class="text-primary-container bg-on-surface inline-block px-4 py-1 mt-2">Leadership.</span>
 </h1>
 </div>
 <div class="md:col-span-4 pb-2">
-<p class="text-secondary text-lg leading-relaxed max-w-xs">
-                        Whether you have questions about our initiatives or want to collaborate, our team is here to listen and engage.
+<p class="text-secondary text-lg leading-relaxed max-w-sm">
+                        The dedicated individuals working tirelessly to break cycles of poverty and build sustainable ecosystems of agency.
                     </p>
 </div>
 </div>
 </header>
-<!-- Contact & Form Grid -->
+<!-- Team Grid -->
 <section class="px-8 max-w-screen-2xl mx-auto mb-32">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
-<!-- Form Section -->
-<div class="lg:col-span-7 bg-surface-container-low p-8 md:p-12 rounded-xl">
-<form class="space-y-8">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<div class="space-y-2">
-<label class="font-label text-xs uppercase tracking-widest font-bold text-secondary">Full Name</label>
-<input class="w-full bg-surface-container-highest border-none rounded-lg px-4 py-4 focus:ring-2 focus:ring-primary focus:bg-surface transition-all placeholder:text-stone-400" placeholder="Jane Doe" type="text"/>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+    <div class="aspect-square relative overflow-hidden">
+        <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Elena Rodriguez">
+    </div>
+    <div class="p-5">
+        <h3 class="font-headline font-bold text-lg mb-1 text-on-surface">Elena Rodriguez</h3>
+        <p class="text-primary font-bold text-[10px] uppercase tracking-widest mb-3">Founder &amp; CEO</p>
+        <p class="text-secondary text-xs leading-relaxed mb-4">Visionary leader driving global strategy and impactful social change over the last 15 years.</p>
+        <div class="flex gap-3">
+            <a href="#" class="text-secondary hover:text-primary transition-colors"><span class="material-symbols-outlined text-[18px]">public</span></a>
+            <a href="#" class="text-secondary hover:text-primary transition-colors"><span class="material-symbols-outlined text-[18px]">mail</span></a>
+        </div>
+    </div>
 </div>
-<div class="space-y-2">
-<label class="font-label text-xs uppercase tracking-widest font-bold text-secondary">Email Address</label>
-<input class="w-full bg-surface-container-highest border-none rounded-lg px-4 py-4 focus:ring-2 focus:ring-primary focus:bg-surface transition-all placeholder:text-stone-400" placeholder="jane@example.com" type="email"/>
+<!-- Card 2 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+    <div class="aspect-square relative overflow-hidden">
+        <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+    </div>
+    <div class="p-5">
+        <h3 class="font-headline font-bold text-lg mb-1 text-on-surface">Michael Chen</h3>
+        <p class="text-primary font-bold text-[10px] uppercase tracking-widest mb-3">Chief Operations Officer</p>
+        <p class="text-secondary text-xs leading-relaxed mb-4">Ensures smooth global execution of our education and public health initiatives daily.</p>
+        <div class="flex gap-3">
+            <a href="#" class="text-secondary hover:text-primary transition-colors"><span class="material-symbols-outlined text-[18px]">public</span></a>
+            <a href="#" class="text-secondary hover:text-primary transition-colors"><span class="material-symbols-outlined text-[18px]">mail</span></a>
+        </div>
+    </div>
 </div>
+<!-- Card 3 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+    <div class="aspect-square relative overflow-hidden">
+        <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Amina Diallo">
+    </div>
+    <div class="p-5">
+        <h3 class="font-headline font-bold text-lg mb-1 text-on-surface">Amina Diallo</h3>
+        <p class="text-primary font-bold text-[10px] uppercase tracking-widest mb-3">Head of Ed Programs</p>
+        <p class="text-secondary text-xs leading-relaxed mb-4">Passionate educator designing curriculum that brings digital literacy to rural areas.</p>
+        <div class="flex gap-3">
+            <a href="#" class="text-secondary hover:text-primary transition-colors"><span class="material-symbols-outlined text-[18px]">public</span></a>
+            <a href="#" class="text-secondary hover:text-primary transition-colors"><span class="material-symbols-outlined text-[18px]">mail</span></a>
+        </div>
+    </div>
 </div>
-<div class="space-y-2">
-<label class="font-label text-xs uppercase tracking-widest font-bold text-secondary">Subject</label>
-<select class="w-full bg-surface-container-highest border-none rounded-lg px-4 py-4 focus:ring-2 focus:ring-primary focus:bg-surface transition-all text-stone-600">
-<option>General Inquiries</option>
-<option>Program Information</option>
-<option>Volunteer Opportunities</option>
-<option>Media &amp; Press</option>
-<option>Partnership Proposal</option>
-</select>
+<!-- Card 4 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+    <div class="aspect-square relative overflow-hidden">
+        <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://randomuser.me/api/portraits/men/22.jpg" alt="David Osei">
+    </div>
+    <div class="p-5">
+        <h3 class="font-headline font-bold text-lg mb-1 text-on-surface">David Osei</h3>
+        <p class="text-primary font-bold text-[10px] uppercase tracking-widest mb-3">Dir. of Public Health</p>
+        <p class="text-secondary text-xs leading-relaxed mb-4">Medical professional scaling mobile clinics to reach over 100,000 families annually.</p>
+        <div class="flex gap-3">
+            <a href="#" class="text-secondary hover:text-primary transition-colors"><span class="material-symbols-outlined text-[18px]">public</span></a>
+            <a href="#" class="text-secondary hover:text-primary transition-colors"><span class="material-symbols-outlined text-[18px]">mail</span></a>
+        </div>
+    </div>
 </div>
-<div class="space-y-2">
-<label class="font-label text-xs uppercase tracking-widest font-bold text-secondary">Your Message</label>
-<textarea class="w-full bg-surface-container-highest border-none rounded-lg px-4 py-4 focus:ring-2 focus:ring-primary focus:bg-surface transition-all placeholder:text-stone-400" placeholder="How can we help you today?" rows="6"></textarea>
+<!-- Card 5 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+    <div class="aspect-square relative overflow-hidden">
+        <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://randomuser.me/api/portraits/women/29.jpg" alt="Rachel Kim">
+    </div>
+    <div class="p-5">
+        <h3 class="font-headline font-bold text-lg mb-1 text-on-surface">Rachel Kim</h3>
+        <p class="text-primary font-bold text-[10px] uppercase tracking-widest mb-3">Chief Financial Officer</p>
+        <p class="text-secondary text-xs leading-relaxed mb-4">Drives our radical transparency models ensuring 92% of funds go straight to programs.</p>
+        <div class="flex gap-3">
+            <a href="#" class="text-secondary hover:text-primary transition-colors"><span class="material-symbols-outlined text-[18px]">public</span></a>
+            <a href="#" class="text-secondary hover:text-primary transition-colors"><span class="material-symbols-outlined text-[18px]">mail</span></a>
+        </div>
+    </div>
 </div>
-<button class="w-full md:w-auto bg-primary-container text-on-primary-container px-12 py-4 rounded-xl font-bold uppercase tracking-widest text-sm impact-btn-gradient transition-all shadow-lg shadow-primary/10" type="submit">
-                            Send Message
-                        </button>
-</form>
+<!-- Card 6 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+    <div class="aspect-square relative overflow-hidden">
+        <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://randomuser.me/api/portraits/men/46.jpg" alt="James Wilson">
+    </div>
+    <div class="p-5">
+        <h3 class="font-headline font-bold text-lg mb-1 text-on-surface">James Wilson</h3>
+        <p class="text-primary font-bold text-[10px] uppercase tracking-widest mb-3">Community Outreach</p>
+        <p class="text-secondary text-xs leading-relaxed mb-4">Builds strong grassroots relationships prioritizing local leadership and voices.</p>
+        <div class="flex gap-3">
+            <a href="#" class="text-secondary hover:text-primary transition-colors"><span class="material-symbols-outlined text-[18px]">public</span></a>
+            <a href="#" class="text-secondary hover:text-primary transition-colors"><span class="material-symbols-outlined text-[18px]">mail</span></a>
+        </div>
+    </div>
 </div>
-<!-- Info Cards -->
-<div class="lg:col-span-5 space-y-12">
-<!-- General Inquiries -->
-<div class="group">
-<h3 class="font-headline text-2xl font-bold mb-4 flex items-center gap-3">
-<span class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center">
-<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">mail</span>
-</span>
-                            General Inquiries
-                        </h3>
-<p class="text-secondary mb-2">For all standard questions and outreach:</p>
-<a class="text-xl font-bold border-b-2 border-primary-container pb-1 hover:text-primary transition-colors" href="mailto:hello@humane.org">hello@humane.org</a>
+<!-- Card 7 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+    <div class="aspect-square relative overflow-hidden">
+        <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://randomuser.me/api/portraits/women/33.jpg" alt="Sophia Patel">
+    </div>
+    <div class="p-5">
+        <h3 class="font-headline font-bold text-lg mb-1 text-on-surface">Sophia Patel</h3>
+        <p class="text-primary font-bold text-[10px] uppercase tracking-widest mb-3">Digital Infrastructure</p>
+        <p class="text-secondary text-xs leading-relaxed mb-4">Architects the tech behind our solar-powered labs, connecting communities seamlessly.</p>
+        <div class="flex gap-3">
+            <a href="#" class="text-secondary hover:text-primary transition-colors"><span class="material-symbols-outlined text-[18px]">public</span></a>
+            <a href="#" class="text-secondary hover:text-primary transition-colors"><span class="material-symbols-outlined text-[18px]">mail</span></a>
+        </div>
+    </div>
 </div>
-<!-- Social Media -->
-<div>
-<h3 class="font-label text-xs uppercase tracking-widest font-bold text-secondary mb-6">Connect Digitally</h3>
-<div class="flex flex-wrap gap-4">
-<a class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-all group" href="#">
-<span class="material-symbols-outlined">public</span>
-</a>
-<a class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-all" href="#">
-<span class="material-symbols-outlined">alternate_email</span>
-</a>
-<a class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-all" href="#">
-<span class="material-symbols-outlined">camera</span>
-</a>
-<a class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-all" href="#">
-<span class="material-symbols-outlined">brand_awareness</span>
-</a>
+<!-- Card 8 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+    <div class="aspect-square relative overflow-hidden">
+        <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://randomuser.me/api/portraits/men/11.jpg" alt="Marcus Johnson">
+    </div>
+    <div class="p-5">
+        <h3 class="font-headline font-bold text-lg mb-1 text-on-surface">Marcus Johnson</h3>
+        <p class="text-primary font-bold text-[10px] uppercase tracking-widest mb-3">Volunteer Director</p>
+        <p class="text-secondary text-xs leading-relaxed mb-4">Mobilizes a global network of volunteers deploying rapid emergency responses.</p>
+        <div class="flex gap-3">
+            <a href="#" class="text-secondary hover:text-primary transition-colors"><span class="material-symbols-outlined text-[18px]">public</span></a>
+            <a href="#" class="text-secondary hover:text-primary transition-colors"><span class="material-symbols-outlined text-[18px]">mail</span></a>
+        </div>
+    </div>
 </div>
+<!-- Card 9 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+    <div class="aspect-square relative overflow-hidden">
+        <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://randomuser.me/api/portraits/women/12.jpg" alt="Isabella Gomez">
+    </div>
+    <div class="p-5">
+        <h3 class="font-headline font-bold text-lg mb-1 text-on-surface">Isabella Gomez</h3>
+        <p class="text-primary font-bold text-[10px] uppercase tracking-widest mb-3">Head of Comms</p>
+        <p class="text-secondary text-xs leading-relaxed mb-4">Shares impactful stories of change, amplifying the narratives of the resilient people we serve.</p>
+        <div class="flex gap-3">
+            <a href="#" class="text-secondary hover:text-primary transition-colors"><span class="material-symbols-outlined text-[18px]">public</span></a>
+            <a href="#" class="text-secondary hover:text-primary transition-colors"><span class="material-symbols-outlined text-[18px]">mail</span></a>
+        </div>
+    </div>
 </div>
-<!-- Signature Impact Stat -->
-<div class="pt-8">
-<div class="relative p-8 bg-on-surface rounded-xl overflow-hidden">
-<div class="relative z-10">
-<span class="text-primary font-headline text-5xl font-extrabold block mb-2">24/7</span>
-<p class="text-surface font-label text-xs uppercase tracking-[0.2em] opacity-80">Response Guarantee for Urgent Support</p>
-</div>
-<div class="absolute -right-8 -bottom-8 opacity-10">
-<span class="material-symbols-outlined text-[120px] text-white">support_agent</span>
-</div>
-</div>
-</div>
+<!-- Card 10 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+    <div class="aspect-square relative overflow-hidden">
+        <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://randomuser.me/api/portraits/men/60.jpg" alt="Thomas Brown">
+    </div>
+    <div class="p-5">
+        <h3 class="font-headline font-bold text-lg mb-1 text-on-surface">Thomas Brown</h3>
+        <p class="text-primary font-bold text-[10px] uppercase tracking-widest mb-3">Special Projects Mgr</p>
+        <p class="text-secondary text-xs leading-relaxed mb-4">Spearheads micro-grant distributions empowering women to lead local economies.</p>
+        <div class="flex gap-3">
+            <a href="#" class="text-secondary hover:text-primary transition-colors"><span class="material-symbols-outlined text-[18px]">public</span></a>
+            <a href="#" class="text-secondary hover:text-primary transition-colors"><span class="material-symbols-outlined text-[18px]">mail</span></a>
+        </div>
+    </div>
 </div>
 </div>
 </section>
@@ -218,9 +290,7 @@
                             1200 Broadway, Suite 400<br/>
                             New York, NY 10001
                         </p>
-<a class="text-primary font-bold text-xs uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
-                            View on Google Maps <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
+
 </div>
 <!-- Location 2 -->
 <div class="bg-surface p-6 rounded-xl group hover:shadow-2xl hover:shadow-on-surface/5 transition-all">
@@ -232,9 +302,7 @@
                             24 Savile Row, Mayfair<br/>
                             London W1S 3PR
                         </p>
-<a class="text-primary font-bold text-xs uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
-                            View on Google Maps <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
+
 </div>
 <!-- Location 3 -->
 <div class="bg-surface p-6 rounded-xl group hover:shadow-2xl hover:shadow-on-surface/5 transition-all">
@@ -246,9 +314,7 @@
                             Karen Road, Professional Centre<br/>
                             Nairobi, Kenya
                         </p>
-<a class="text-primary font-bold text-xs uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
-                            View on Google Maps <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
+
 </div>
 </div>
 </div>
@@ -257,12 +323,9 @@
 <!-- Footer -->
 <footer class="w-full py-16 px-8 border-t border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900">
 <div class="flex flex-col md:flex-row justify-between items-center gap-8 w-full max-w-screen-2xl mx-auto">
-<div class="text-xl font-bold text-stone-800 dark:text-stone-100">HUMANE FOUNDATION.</div>
+<a href="index.html" class="text-xl font-bold text-stone-800 dark:text-stone-100">HUMANE FOUNDATION.</a>
 <div class="flex flex-wrap justify-center gap-8 font-['Plus_Jakarta_Sans'] text-xs tracking-widest uppercase">
-<a class="text-stone-400 dark:text-stone-500 hover:underline decoration-yellow-500 underline-offset-4 transition-all" href="#">Privacy Policy</a>
-<a class="text-stone-400 dark:text-stone-500 hover:underline decoration-yellow-500 underline-offset-4 transition-all" href="#">Annual Report</a>
-<a class="text-stone-900 dark:text-white font-bold hover:underline decoration-yellow-500 underline-offset-4 transition-all" href="#">Contact</a>
-<a class="text-stone-400 dark:text-stone-500 hover:underline decoration-yellow-500 underline-offset-4 transition-all" href="#">Careers</a>
+<a class="text-stone-900 dark:text-white font-bold hover:underline decoration-yellow-500 underline-offset-4 transition-all" href="code.html">Contact</a>
 </div>
 <div class="font-['Plus_Jakarta_Sans'] text-[10px] tracking-[0.2em] text-stone-400 uppercase">
                 © 2024 HUMANE FOUNDATION. ALL RIGHTS RESERVED.

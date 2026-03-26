@@ -58,17 +58,15 @@
     </style>
 </head>
 <body class="bg-background text-on-background font-body selection:bg-primary-accent/30">
-<!-- TopNavBar Shared Component -->
-<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-900/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(28,27,27,0.06)] dark:shadow-none transition-colors duration-300">
-<div class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
-<a class="text-2xl font-black tracking-tighter text-stone-900 dark:text-stone-50 font-['Plus_Jakarta_Sans']" href="index.html">Humane Foundation</a>
-<div class="hidden md:flex items-center gap-12 font-['Plus_Jakarta_Sans'] tracking-tight font-medium uppercase text-sm">
+<!-- Top Navigation Shared -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-900/80 backdrop-blur-xl shadow-sm border-b border-stone-200/50 dark:border-stone-800/50 transition-colors duration-300 font-['Plus_Jakarta_Sans']">
+<div class="flex justify-between items-center px-8 py-5 max-w-screen-2xl mx-auto">
+<a class="text-2xl font-black tracking-tighter text-stone-900 dark:text-stone-50" href="index.html">Humane Foundation</a>
+<div class="hidden md:flex items-center gap-12 tracking-tight font-bold uppercase text-sm">
 <a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors duration-300" href="code.html">Contact</a>
 </div>
 <div class="flex items-center gap-6">
-<button class="bg-primary-accent text-stone-950 px-7 py-2.5 rounded-lg font-headline font-bold scale-100 active:scale-95 transition-transform shadow-lg shadow-primary-accent/20">
-                Donate
-            </button>
+<a href="donate.html" class="bg-[#FFD700] text-black px-7 py-2.5 rounded-xl font-bold text-sm tracking-tight hover:shadow-lg hover:scale-105 active:scale-95 transition-all inline-block text-center">Donate</a>
 </div>
 </div>
 </nav>
@@ -92,9 +90,9 @@
                     A global non-profit collective dedicated to breaking cycles of poverty through radical transparency and systematic intervention in education and healthcare.
                 </p>
 <div class="flex flex-wrap gap-5">
-<button class="bg-primary-accent text-stone-950 px-10 py-5 rounded-xl font-headline font-bold text-lg hover:shadow-2xl hover:shadow-primary-accent/40 transition-all transform hover:-translate-y-1">
+<a href="donate.html" class="bg-primary-accent text-stone-950 px-10 py-5 rounded-xl font-headline font-bold text-lg hover:shadow-2xl hover:shadow-primary-accent/40 transition-all transform hover:-translate-y-1 inline-block text-center">
                         Donate Now
-                    </button>
+                    </a>
 <button class="bg-white/5 backdrop-blur-md border border-white/20 text-white px-10 py-5 rounded-xl font-headline font-bold text-lg hover:bg-white/10 transition-all">
                         Join the Movement
                     </button>
@@ -151,10 +149,7 @@
 <h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight text-stone-900">Current Initiatives</h2>
 <div class="h-1 w-20 bg-primary-accent mt-4"></div>
 </div>
-<a class="text-stone-900 font-bold group flex items-center gap-2" href="#">
-                    View All Campaigns 
-                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</a>
+
 </div>
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
 <!-- Main Feature -->
@@ -187,7 +182,7 @@
 <div class="relative z-10">
 <h3 class="font-headline text-2xl font-bold text-stone-900 mb-4">Become a Guardian</h3>
 <p class="text-stone-600 font-light leading-relaxed">Monthly supporters are the backbone of our long-term stability. Join 24,000 others today.</p>
-<button class="mt-8 bg-stone-950 text-white px-8 py-4 rounded-xl font-bold hover:bg-stone-800 transition-colors">Start Giving</button>
+<a href="donate.html" class="mt-8 bg-stone-950 text-white px-8 py-4 rounded-xl font-bold hover:bg-stone-800 transition-colors inline-block text-center">Start Giving</a>
 </div>
 <span class="absolute right-[-5%] bottom-[-10%] text-[140px] font-black text-stone-900/5 select-none leading-none transform -rotate-12 group-hover:rotate-0 transition-transform duration-700">HOPE</span>
 </div>
@@ -215,10 +210,7 @@
 <p class="text-stone-500 text-xl leading-relaxed mb-10 font-light">
                         Amara was the first girl in her community to complete secondary education. Through our 'Lead Her' program, she received the mentoring and financial support necessary to pursue an engineering degree. Today, she’s back in her village designing low-cost irrigation systems for local farmers.
                     </p>
-<a class="inline-flex items-center gap-4 text-stone-900 font-extrabold group text-lg" href="#">
-                        Read Amara's Full Journey
-                        <span class="material-symbols-outlined p-2 rounded-full border border-stone-900 group-hover:bg-stone-900 group-hover:text-white transition-all" data-icon="arrow_forward">arrow_forward</span>
-</a>
+
 </div>
 </div>
 </div>
@@ -254,7 +246,7 @@
 </main>
 <!-- Footer Shared Component -->
 <footer class="bg-stone-50 dark:bg-stone-950 w-full border-t border-stone-200/20 dark:border-stone-800/20 font-['Plus_Jakarta_Sans'] text-sm text-stone-600 dark:text-stone-400">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 px-12 py-20 max-w-7xl mx-auto">
 <div class="md:col-span-1">
 <div class="text-lg font-bold text-stone-900 dark:text-stone-100 mb-6">Humane Foundation</div>
 <p class="mb-8 leading-relaxed opacity-80">Empowering communities through empathy and radical transparency since 2012.</p>
@@ -264,24 +256,7 @@
 <span class="material-symbols-outlined text-stone-400 hover:text-yellow-600 cursor-pointer transition-colors" data-icon="share">share</span>
 </div>
 </div>
-<div>
-<h4 class="font-semibold text-stone-900 dark:text-stone-100 mb-6 uppercase tracking-widest text-[10px]">Programs</h4>
-<ul class="space-y-4">
-<li><a class="text-stone-500 dark:text-stone-400 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors" href="#">Digital Literacy</a></li>
-<li><a class="text-stone-500 dark:text-stone-400 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors" href="#">Community Health</a></li>
-<li><a class="text-stone-500 dark:text-stone-400 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors" href="#">Economic Agency</a></li>
-<li><a class="text-stone-500 dark:text-stone-400 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors" href="#">Transparency</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-semibold text-stone-900 dark:text-stone-100 mb-6 uppercase tracking-widest text-[10px]">Legal &amp; Governance</h4>
-<ul class="space-y-4">
-<li><a class="text-stone-500 dark:text-stone-400 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors" href="#">Privacy Policy</a></li>
-<li><a class="text-stone-500 dark:text-stone-400 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors" href="#">Terms of Service</a></li>
-<li><a class="text-stone-500 dark:text-stone-400 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors" href="#">Financials</a></li>
-<li><a class="text-stone-500 dark:text-stone-400 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors" href="#">Careers</a></li>
-</ul>
-</div>
+
 <div>
 <h4 class="font-semibold text-stone-900 dark:text-stone-100 mb-6 uppercase tracking-widest text-[10px]">Newsletter</h4>
 <p class="text-stone-500 mb-6 text-xs">Join our monthly impact update.</p>
@@ -305,6 +280,6 @@
 </div>
 <p class="text-xs font-medium text-stone-300">Join 24,000+ monthly supporters today.</p>
 </div>
-<button class="bg-primary-accent text-stone-950 px-8 py-3 rounded-xl font-headline font-extrabold text-sm shadow-xl shadow-primary-accent/10 whitespace-nowrap transform hover:scale-105 transition-all">Start Monthly Giving</button>
+<a href="donate.html" class="bg-primary-accent text-stone-950 px-8 py-3 rounded-xl font-headline font-extrabold text-sm shadow-xl shadow-primary-accent/10 whitespace-nowrap transform hover:scale-105 transition-all inline-block text-center">Start Monthly Giving</a>
 </div>
 </body></html>
