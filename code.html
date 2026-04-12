@@ -1,21 +1,15 @@
 <!DOCTYPE html>
-
 <html class="light" lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact & Team | Humane Foundation</title>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script id="tailwind-config">
         tailwind.config = {
@@ -26,455 +20,154 @@
                         "surface-container-lowest": "#ffffff",
                         "outline": "#7e775f",
                         "surface-bright": "#fcf9f8",
-                        "on-primary": "#ffffff",
-                        "on-tertiary-fixed-variant": "#004f54",
-                        "secondary-fixed-dim": "#c8c6c5",
-                        "secondary-fixed": "#e5e2e1",
-                        "on-secondary-fixed-variant": "#474646",
-                        "surface-container-high": "#ebe7e7",
-                        "on-tertiary-container": "#006a70",
-                        "on-error-container": "#93000a",
                         "primary-container": "#ffd700",
-                        "tertiary-container": "#00f1ff",
                         "on-surface": "#1c1b1b",
-                        "on-primary-fixed-variant": "#544600",
-                        "on-surface-variant": "#4d4732",
-                        "on-secondary-fixed": "#1c1b1b",
-                        "inverse-surface": "#313030",
-                        "surface-tint": "#705d00",
-                        "secondary-container": "#e5e2e1",
-                        "on-secondary": "#ffffff",
-                        "on-tertiary-fixed": "#002022",
-                        "surface-variant": "#e5e2e1",
-                        "surface-container-highest": "#e5e2e1",
-                        "inverse-on-surface": "#f3f0ef",
-                        "primary-fixed-dim": "#e9c400",
-                        "on-primary-container": "#705e00",
-                        "tertiary-fixed-dim": "#00dbe8",
-                        "primary-fixed": "#ffe16d",
-                        "on-tertiary": "#ffffff",
                         "background": "#fcf9f8",
-                        "on-secondary-container": "#656464",
-                        "surface-dim": "#dcd9d9",
-                        "surface-container": "#f0edec",
                         "on-background": "#1c1b1b",
-                        "inverse-primary": "#e9c400",
                         "secondary": "#5f5e5e",
                         "surface": "#fcf9f8",
-                        "tertiary-fixed": "#79f5ff",
-                        "on-primary-fixed": "#221b00",
-                        "error": "#ba1a1a",
-                        "outline-variant": "#d0c6ab",
-                        "error-container": "#ffdad6",
-                        "surface-container-low": "#f6f3f2",
-                        "on-error": "#ffffff",
-                        "tertiary": "#00696f",
                         "primary": "#705d00"
                     },
                     fontFamily: {
                         "headline": ["Plus Jakarta Sans"],
-                        "body": ["Plus Jakarta Sans"],
-                        "label": ["Plus Jakarta Sans"]
+                        "body": ["Plus Jakarta Sans"]
                     },
                     borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
                 },
             },
         }
     </script>
-    <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-
-        .hero-gradient {
-            background: linear-gradient(135deg, rgba(252, 249, 248, 1) 0%, rgba(246, 243, 242, 1) 100%);
-        }
-
-        .impact-btn-gradient:hover {
-            background: linear-gradient(135deg, #705d00 0%, #FFD700 100%);
-            color: white;
-        }
-    </style>
 </head>
 
-<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
-    <!-- Top Navigation Shared -->
-    <nav
-        class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-900/80 backdrop-blur-xl shadow-sm border-b border-stone-200/50 dark:border-stone-800/50 transition-colors duration-300 font-['Plus_Jakarta_Sans']">
+<body class="bg-surface font-body text-on-surface">
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl shadow-sm border-b border-stone-200/50 font-['Plus_Jakarta_Sans']">
         <div class="flex justify-between items-center px-8 py-5 max-w-screen-2xl mx-auto">
-            <a class="flex items-center gap-2 text-2xl font-black tracking-tighter text-stone-900 dark:text-stone-50"
-                href="index.html">
-                <img src="logo.png" alt="Humane Foundation logo" width="50" class="block">
+            <a class="flex items-center gap-2 text-2xl font-black tracking-tighter text-stone-900" href="index.html">
+                <img src="logo.png" alt="Humane Foundation logo" width="50">
                 <span>Humane Foundation</span>
             </a>
-
-            <div class="hidden md:flex items-center gap-12 tracking-tight font-bold uppercase text-sm">
-                <a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors duration-300"
-                    href="code.html">Contact</a>
-            </div>
             <div class="flex items-center gap-6">
-                <a href="donate.html"
-                    class="bg-[#FFD700] text-black px-7 py-2.5 rounded-xl font-bold text-sm tracking-tight hover:shadow-lg hover:scale-105 active:scale-95 transition-all inline-block text-center">Donate</a>
+                <a href="code.html" class="text-stone-500 font-bold uppercase text-sm">Contact</a>
+                <a href="donate.html" class="bg-[#FFD700] text-black px-7 py-2.5 rounded-xl font-bold text-sm hover:shadow-lg transition-all">Donate</a>
             </div>
         </div>
     </nav>
+
     <main class="pt-32 pb-24">
-        <!<!-- Hero Section -->
-            <header class="px-8 max-w-screen-2xl mx-auto mb-16">
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
-                    <div class="md:col-span-8">
-                        <span
-                            class="font-label uppercase tracking-[0.2em] text-primary text-sm font-bold block mb-4">Our
-                            People</span>
-                        <h1
-                            class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-on-surface leading-[0.9]">
-                            Meet Our <br />
-                            <span
-                                class="text-primary-container bg-on-surface inline-block px-4 py-1 mt-2">Leadership.</span>
-                        </h1>
+        <header class="px-8 max-w-screen-2xl mx-auto mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+                <div class="md:col-span-8">
+                    <span class="font-label uppercase tracking-[0.2em] text-primary text-sm font-bold block mb-4">Our Movement</span>
+                    <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-on-surface leading-[0.9]">
+                        Meet Our <br />
+                        <span class="text-primary-container bg-on-surface inline-block px-4 py-1 mt-2">Team.</span>
+                    </h1>
+                </div>
+                <div class="md:col-span-4 pb-2">
+                    <p class="text-secondary text-lg leading-relaxed max-w-sm">
+                        A group of dedicated friends and coordinators working to build sustainable systems of education and empowerment.
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <section class="px-8 max-w-screen-2xl mx-auto mb-32">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white border border-stone-200 rounded-xl overflow-hidden p-8 hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined">computer</span>
                     </div>
-                    <div class="md:col-span-4 pb-2">
-                        <p class="text-secondary text-lg leading-relaxed max-w-sm">
-                            The dedicated individuals working tirelessly to break cycles of poverty and build
-                            sustainable ecosystems of agency.
+                    <h3 class="font-headline font-bold text-xl mb-2">Digital Literacy Team</h3>
+                    <p class="text-primary font-bold text-[10px] uppercase tracking-widest mb-4">Rural Education</p>
+                    <p class="text-secondary text-sm leading-relaxed mb-6">Teaching children in rural areas computer skills and upgrading teachers' technical knowledge.</p>
+                    <a href="mailto:humanefoundation34@gmail.com" class="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors">Contact Dept →</a>
+                </div>
+
+                <div class="bg-white border border-stone-200 rounded-xl overflow-hidden p-8 hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined">restaurant</span>
+                    </div>
+                    <h3 class="font-headline font-bold text-xl mb-2">Hunger Mission Team</h3>
+                    <p class="text-primary font-bold text-[10px] uppercase tracking-widest mb-4">Community Support</p>
+                    <p class="text-secondary text-sm leading-relaxed mb-6">Managing the collection of leftover food from hotels and restaurants for the homeless and hungry.</p>
+                    <a href="mailto:humanefoundation34@gmail.com" class="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors">Contact Dept →</a>
+                </div>
+
+                <div class="bg-white border border-stone-200 rounded-xl overflow-hidden p-8 hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined">groups</span>
+                    </div>
+                    <h3 class="font-headline font-bold text-xl mb-2">Social Empowerment</h3>
+                    <p class="text-primary font-bold text-[10px] uppercase tracking-widest mb-4">Rights Awareness</p>
+                    <p class="text-secondary text-sm leading-relaxed mb-6">Leading theater workshops and plantation drives to build an educated and aware society.</p>
+                    <a href="mailto:humanefoundation34@gmail.com" class="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors">Contact Dept →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-stone-50 py-32 px-8">
+            <div class="max-w-screen-2xl mx-auto">
+                <div class="mb-16">
+                    <h2 class="font-headline text-4xl font-bold tracking-tight mb-4">Our Presence</h2>
+                    <div class="h-1 w-20 bg-primary-container"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="bg-white p-8 rounded-xl border border-stone-200 group hover:shadow-2xl transition-all">
+                        <div class="flex justify-between items-start mb-6">
+                            <h4 class="font-headline text-2xl font-bold">Head Office: Nagpur</h4>
+                            <span class="text-[10px] font-bold text-red-700 bg-red-50 px-3 py-1 rounded-full">Nagpur/0000190/2022</span>
+                        </div>
+                        <p class="text-secondary text-sm leading-relaxed mb-8">
+                            Plot No. 31, Bezon Bagh, Garden Layout,<br />
+                            Nagpur-440004
                         </p>
-                    </div>
-                </div>
-            </header>
-            <!-- Team Grid -->
-            <section class="px-8 max-w-screen-2xl mx-auto mb-32">
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6">
-                    <!-- Card 1 -->
-                    <div
-                        class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                        <div class="aspect-square relative overflow-hidden">
-                            <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                                src="https://randomuser.me/api/portraits/women/68.jpg" alt="Elena Rodriguez">
-                        </div>
-                        <div class="p-5">
-                            <h3 class="font-headline font-bold text-lg mb-1 text-on-surface">Elena Rodriguez</h3>
-                            <p class="text-primary font-bold text-[10px] uppercase tracking-widest mb-3">Founder &amp;
-                                CEO</p>
-                            <p class="text-secondary text-xs leading-relaxed mb-4">Visionary leader driving global
-                                strategy and impactful social change over the last 15 years.</p>
-                            <div class="flex gap-3">
-                                <a href="#" class="text-secondary hover:text-primary transition-colors"><span
-                                        class="material-symbols-outlined text-[18px]">public</span></a>
-                                <a href="#" class="text-secondary hover:text-primary transition-colors"><span
-                                        class="material-symbols-outlined text-[18px]">mail</span></a>
-                            </div>
+                        <div class="flex items-center gap-3 font-bold text-on-surface">
+                            <span class="material-symbols-outlined">call</span>
+                            <span>+91 90213 39141</span>
                         </div>
                     </div>
-                    <!-- Card 2 -->
-                    <div
-                        class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                        <div class="aspect-square relative overflow-hidden">
-                            <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                                src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
-                        </div>
-                        <div class="p-5">
-                            <h3 class="font-headline font-bold text-lg mb-1 text-on-surface">Michael Chen</h3>
-                            <p class="text-primary font-bold text-[10px] uppercase tracking-widest mb-3">Chief
-                                Operations Officer</p>
-                            <p class="text-secondary text-xs leading-relaxed mb-4">Ensures smooth global execution of
-                                our education and public health initiatives daily.</p>
-                            <div class="flex gap-3">
-                                <a href="#" class="text-secondary hover:text-primary transition-colors"><span
-                                        class="material-symbols-outlined text-[18px]">public</span></a>
-                                <a href="#" class="text-secondary hover:text-primary transition-colors"><span
-                                        class="material-symbols-outlined text-[18px]">mail</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 3 -->
-                    <div
-                        class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                        <div class="aspect-square relative overflow-hidden">
-                            <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                                src="https://randomuser.me/api/portraits/women/44.jpg" alt="Amina Diallo">
-                        </div>
-                        <div class="p-5">
-                            <h3 class="font-headline font-bold text-lg mb-1 text-on-surface">Amina Diallo</h3>
-                            <p class="text-primary font-bold text-[10px] uppercase tracking-widest mb-3">Head of Ed
-                                Programs</p>
-                            <p class="text-secondary text-xs leading-relaxed mb-4">Passionate educator designing
-                                curriculum that brings digital literacy to rural areas.</p>
-                            <div class="flex gap-3">
-                                <a href="#" class="text-secondary hover:text-primary transition-colors"><span
-                                        class="material-symbols-outlined text-[18px]">public</span></a>
-                                <a href="#" class="text-secondary hover:text-primary transition-colors"><span
-                                        class="material-symbols-outlined text-[18px]">mail</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 4 -->
-                    <div
-                        class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                        <div class="aspect-square relative overflow-hidden">
-                            <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                                src="https://randomuser.me/api/portraits/men/22.jpg" alt="David Osei">
-                        </div>
-                        <div class="p-5">
-                            <h3 class="font-headline font-bold text-lg mb-1 text-on-surface">David Osei</h3>
-                            <p class="text-primary font-bold text-[10px] uppercase tracking-widest mb-3">Dir. of Public
-                                Health</p>
-                            <p class="text-secondary text-xs leading-relaxed mb-4">Medical professional scaling mobile
-                                clinics to reach over 100,000 families annually.</p>
-                            <div class="flex gap-3">
-                                <a href="#" class="text-secondary hover:text-primary transition-colors"><span
-                                        class="material-symbols-outlined text-[18px]">public</span></a>
-                                <a href="#" class="text-secondary hover:text-primary transition-colors"><span
-                                        class="material-symbols-outlined text-[18px]">mail</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 5 -->
-                    <div
-                        class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                        <div class="aspect-square relative overflow-hidden">
-                            <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                                src="https://randomuser.me/api/portraits/women/29.jpg" alt="Rachel Kim">
-                        </div>
-                        <div class="p-5">
-                            <h3 class="font-headline font-bold text-lg mb-1 text-on-surface">Rachel Kim</h3>
-                            <p class="text-primary font-bold text-[10px] uppercase tracking-widest mb-3">Chief Financial
-                                Officer</p>
-                            <p class="text-secondary text-xs leading-relaxed mb-4">Drives our radical transparency
-                                models ensuring 92% of funds go straight to programs.</p>
-                            <div class="flex gap-3">
-                                <a href="#" class="text-secondary hover:text-primary transition-colors"><span
-                                        class="material-symbols-outlined text-[18px]">public</span></a>
-                                <a href="#" class="text-secondary hover:text-primary transition-colors"><span
-                                        class="material-symbols-outlined text-[18px]">mail</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 6 -->
-                    <div
-                        class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                        <div class="aspect-square relative overflow-hidden">
-                            <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                                src="https://randomuser.me/api/portraits/men/46.jpg" alt="James Wilson">
-                        </div>
-                        <div class="p-5">
-                            <h3 class="font-headline font-bold text-lg mb-1 text-on-surface">James Wilson</h3>
-                            <p class="text-primary font-bold text-[10px] uppercase tracking-widest mb-3">Community
-                                Outreach</p>
-                            <p class="text-secondary text-xs leading-relaxed mb-4">Builds strong grassroots
-                                relationships prioritizing local leadership and voices.</p>
-                            <div class="flex gap-3">
-                                <a href="#" class="text-secondary hover:text-primary transition-colors"><span
-                                        class="material-symbols-outlined text-[18px]">public</span></a>
-                                <a href="#" class="text-secondary hover:text-primary transition-colors"><span
-                                        class="material-symbols-outlined text-[18px]">mail</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 7 -->
-                    <div
-                        class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                        <div class="aspect-square relative overflow-hidden">
-                            <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                                src="https://randomuser.me/api/portraits/women/33.jpg" alt="Sophia Patel">
-                        </div>
-                        <div class="p-5">
-                            <h3 class="font-headline font-bold text-lg mb-1 text-on-surface">Sophia Patel</h3>
-                            <p class="text-primary font-bold text-[10px] uppercase tracking-widest mb-3">Digital
-                                Infrastructure</p>
-                            <p class="text-secondary text-xs leading-relaxed mb-4">Architects the tech behind our
-                                solar-powered labs, connecting communities seamlessly.</p>
-                            <div class="flex gap-3">
-                                <a href="#" class="text-secondary hover:text-primary transition-colors"><span
-                                        class="material-symbols-outlined text-[18px]">public</span></a>
-                                <a href="#" class="text-secondary hover:text-primary transition-colors"><span
-                                        class="material-symbols-outlined text-[18px]">mail</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 8 -->
-                    <div
-                        class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                        <div class="aspect-square relative overflow-hidden">
-                            <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                                src="https://randomuser.me/api/portraits/men/11.jpg" alt="Marcus Johnson">
-                        </div>
-                        <div class="p-5">
-                            <h3 class="font-headline font-bold text-lg mb-1 text-on-surface">Marcus Johnson</h3>
-                            <p class="text-primary font-bold text-[10px] uppercase tracking-widest mb-3">Volunteer
-                                Director</p>
-                            <p class="text-secondary text-xs leading-relaxed mb-4">Mobilizes a global network of
-                                volunteers deploying rapid emergency responses.</p>
-                            <div class="flex gap-3">
-                                <a href="#" class="text-secondary hover:text-primary transition-colors"><span
-                                        class="material-symbols-outlined text-[18px]">public</span></a>
-                                <a href="#" class="text-secondary hover:text-primary transition-colors"><span
-                                        class="material-symbols-outlined text-[18px]">mail</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 9 -->
-                    <div
-                        class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                        <div class="aspect-square relative overflow-hidden">
-                            <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                                src="https://randomuser.me/api/portraits/women/12.jpg" alt="Isabella Gomez">
-                        </div>
-                        <div class="p-5">
-                            <h3 class="font-headline font-bold text-lg mb-1 text-on-surface">Isabella Gomez</h3>
-                            <p class="text-primary font-bold text-[10px] uppercase tracking-widest mb-3">Head of Comms
-                            </p>
-                            <p class="text-secondary text-xs leading-relaxed mb-4">Shares impactful stories of change,
-                                amplifying the narratives of the resilient people we serve.</p>
-                            <div class="flex gap-3">
-                                <a href="#" class="text-secondary hover:text-primary transition-colors"><span
-                                        class="material-symbols-outlined text-[18px]">public</span></a>
-                                <a href="#" class="text-secondary hover:text-primary transition-colors"><span
-                                        class="material-symbols-outlined text-[18px]">mail</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 10 -->
-                    <div
-                        class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                        <div class="aspect-square relative overflow-hidden">
-                            <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                                src="https://randomuser.me/api/portraits/men/60.jpg" alt="Thomas Brown">
-                        </div>
-                        <div class="p-5">
-                            <h3 class="font-headline font-bold text-lg mb-1 text-on-surface">Thomas Brown</h3>
-                            <p class="text-primary font-bold text-[10px] uppercase tracking-widest mb-3">Special
-                                Projects Mgr</p>
-                            <p class="text-secondary text-xs leading-relaxed mb-4">Spearheads micro-grant distributions
-                                empowering women to lead local economies.</p>
-                            <div class="flex gap-3">
-                                <a href="#" class="text-secondary hover:text-primary transition-colors"><span
-                                        class="material-symbols-outlined text-[18px]">public</span></a>
-                                <a href="#" class="text-secondary hover:text-primary transition-colors"><span
-                                        class="material-symbols-outlined text-[18px]">mail</span></a>
-                            </div>
+
+                    <div class="bg-white p-8 rounded-xl border border-stone-200 group hover:shadow-2xl transition-all">
+                        <h4 class="font-headline text-2xl font-bold mb-6">Branch Office: Yavatmal</h4>
+                        <p class="text-secondary text-sm leading-relaxed mb-8">
+                            D-10, Ambika Nagar, Nalanda Garden,<br />
+                            Yavatmal-445001
+                        </p>
+                        <div class="flex items-center gap-3 font-bold text-on-surface">
+                            <span class="material-symbols-outlined">call</span>
+                            <span>+91 9689180409</span>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- Locations Section -->
-            <section class="bg-surface-container-low py-32 px-8">
-                <div class="max-w-screen-2xl mx-auto">
-                    <div class="mb-16">
-                        <h2 class="font-headline text-4xl font-bold tracking-tight mb-4">Our Global Presence</h2>
-                        <div class="h-1 w-20 bg-primary-container"></div>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                        <!-- Location 1 -->
-                        <div
-                            class="bg-surface p-6 rounded-xl group hover:shadow-2xl hover:shadow-on-surface/5 transition-all">
-                            <div
-                                class="aspect-video rounded-lg mb-6 overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
-                                <img class="w-full h-full object-cover"
-                                    data-alt="top-down map view of an urban metropolitan area with clean streets and modern architecture layout"
-                                    data-location="New York"
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNBAEp5bh-ryH_zppz0AUWwWdGbjRBJJSasTfNY3e6abPw6bbcbiTwAJTa2Y5oVf27uddjnKZXYgeNG9jF0ygX_TEH5dJ4WGtoGKp0k6emtPE0gO-dStNUPBBwycBuYL-ERA2ALciG7zn4TxuX6eqww2kSpvxFXCz-rupf4MXXAzSIq7d5yVZCoa0xvJznzUuXKr2tC1dW_HkH7pFHFSDUz7f4bK7RrVNuWwiiAcz4Xby8d2cqtEztSdqKeTnK5EB7zq098B0FzAY" />
-                            </div>
-                            <h4 class="font-headline text-xl font-bold mb-2">New York HQ</h4>
-                            <p class="text-secondary text-sm leading-relaxed mb-4">
-                                1200 Broadway, Suite 400<br />
-                                New York, NY 10001
-                            </p>
-
-                        </div>
-                        <!-- Location 2 -->
-                        <div
-                            class="bg-surface p-6 rounded-xl group hover:shadow-2xl hover:shadow-on-surface/5 transition-all">
-                            <div
-                                class="aspect-video rounded-lg mb-6 overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
-                                <img class="w-full h-full object-cover"
-                                    data-alt="abstract architectural map style graphic of London city center showing Thames river and main road arteries"
-                                    data-location="London"
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5oCvX0BU-kLsnI6ycATb_nBTKqnAK9sCnq1TEUg09Rvw4PDnCMA1KclZyzBygPYsJTV88W56xo9d33P_4ia-8CKfwpst_ulLamQ9IvZpO7NmhcIAMm_dPlrhw8nAbiqzfA9JcQjh8R3YVZjcWfTPlAEt2Y74stEQdkMiEXbirWRXqEXw7pHkpR2tTdXKN3BWoCwJIZDMsVTN18kDx_bqpEv-VzBeVTee_a4jLtC6spYqx7nKV5PwYzDuGWkWWmSVMsL5bBCQcsmw" />
-                            </div>
-                            <h4 class="font-headline text-xl font-bold mb-2">London Studio</h4>
-                            <p class="text-secondary text-sm leading-relaxed mb-4">
-                                24 Savile Row, Mayfair<br />
-                                London W1S 3PR
-                            </p>
-
-                        </div>
-                        <!-- Location 3 -->
-                        <div
-                            class="bg-surface p-6 rounded-xl group hover:shadow-2xl hover:shadow-on-surface/5 transition-all">
-                            <div
-                                class="aspect-video rounded-lg mb-6 overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
-                                <img class="w-full h-full object-cover"
-                                    data-alt="minimalist map representation of Nairobi city grid with warm earth tones and sharp modern vector lines"
-                                    data-location="Nairobi"
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwm-UVmzgreCX7xIO3pT7q3nPBBo60UgLIUFbB7iGy5vn_Igin-rE_GnhPZlzrFa7kb6nLRWNqJWHM0Ac06hQx6tWU0xvbo7284KTpB6EEdNXYyNQfs8QG5hdRfO3Lxon5Ndj1cY2DrzCoqKtjRmqD4f-vsXafGxXvT_bUzJmgYcXay8ow5q21vUCcrP7AQ_KihqRwCQvI8ifLBZKp5WOUOtSg10w0CewHklJXtfXEa5jaIKGLAA9J3hepHxpKS4sw0M6Y81B5LO8" />
-                            </div>
-                            <h4 class="font-headline text-xl font-bold mb-2">Nairobi Hub</h4>
-                            <p class="text-secondary text-sm leading-relaxed mb-4">
-                                Karen Road, Professional Centre<br />
-                                Nairobi, Kenya
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
+        </section>
     </main>
-    <!-- Footer -->
-     <footer class="w-full font-sans">
-  <div class="px-6 py-2">
-    <p class="text-xs font-bold text-red-700">Reg No. Nagpur/0000190/2022</p>
-  </div>
 
-  <div class="bg-[#e68a4d] text-white px-6 py-6 grid md:grid-cols-2 gap-8 relative">
-    <div class="hidden md:block absolute left-1/2 top-4 bottom-4 w-px bg-white/50"></div>
-
-    <div class="flex flex-col gap-2">
-      <h3 class="font-bold underline decoration-1 underline-offset-4 mb-1">Head Office:</h3>
-      <div class="flex gap-3 items-start">
-        <svg class="w-5 h-5 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-        <p class="leading-tight">Plot No. 31, Bezon Bagh, Garden Layout,<br>Nagpur-440004</p>
-      </div>
-      <div class="flex gap-3 items-center">
-        <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-        <p class="font-semibold">+91 90213 39141, &nbsp; 80870 84584</p>
-      </div>
-    </div>
-
-    <div class="flex flex-col gap-2">
-      <h3 class="font-bold underline decoration-1 underline-offset-4 mb-1">Branch Office:</h3>
-      <div class="flex gap-3 items-start">
-        <svg class="w-5 h-5 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-        <p class="leading-tight">D-10, Ambika Nagar, Nalanda Garden,<br>Yavatmal-445001</p>
-      </div>
-      <div class="flex gap-3 items-center">
-        <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-        <p class="font-semibold">+91 9689180409</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4 text-sm font-bold border-t border-stone-200">
-    <div class="flex items-center gap-2">
-      <span class="text-red-500">✉</span>
-      <span>humanefoundation34@gmail.com</span>
-    </div>
-    
-    <div class="flex items-center gap-2 border-x-0 md:border-x px-8 border-stone-300">
-      <span class="text-blue-600">🌐</span>
-      <a href="https://humanefoundation.in" class="hover:underline">humanefoundation.in</a>
-    </div>
-
-    <div class="flex items-center gap-3">
-      <span class="uppercase">Follow us on :</span>
-      <div class="flex gap-2 text-blue-800 text-lg">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-instagram text-pink-600"></i>
-        <i class="fab fa-twitter text-sky-500"></i>
-      </div>
-      <span class="ml-1">Humane Foundation Nagpur</span>
-    </div>
-  </div>
-</footer>
+    <footer class="w-full font-sans border-t border-stone-200">
+        <div class="px-6 py-2">
+            <p class="text-xs font-bold text-red-700">Reg No. Nagpur/0000190/2022</p>
+        </div>
+        <div class="bg-[#e68a4d] text-white px-6 py-8 grid md:grid-cols-2 gap-8">
+            <div>
+                <h3 class="font-bold underline underline-offset-4 mb-2">Head Office:</h3>
+                <p>Plot No. 31, Bezon Bagh, Garden Layout, Nagpur-440004</p>
+                <p class="font-bold mt-2">+91 90213 39141</p>
+            </div>
+            <div>
+                <h3 class="font-bold underline underline-offset-4 mb-2">Branch Office:</h3>
+                <p>D-10, Ambika Nagar, Nalanda Garden, Yavatmal-445001</p>
+                <p class="font-bold mt-2">+91 9689180409</p>
+            </div>
+        </div>
+        <div class="px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4 text-sm font-bold bg-white">
+            <div>✉ humanefoundation34@gmail.com</div>
+            <div>🌐 humanefoundation.in</div>
+            <div class="flex gap-4">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+    </footer>
 </body>
-
 </html>
