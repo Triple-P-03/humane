@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Humane Foundation | Impact through Empathy</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Gloria+Hallelujah&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-accent": "#FFD700",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#fcf9f8",
+                        "on-background": "#121212",
+                        "stone": {
+                            50: "#fcfcfc", 100: "#f5f5f4", 200: "#e7e5e4", 400: "#a8a29e",
+                            500: "#78716c", 600: "#57534e", 800: "#292524", 900: "#1c1917", 950: "#0c0a09"
+                        }
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "script": ["Gloria Hallelujah", "cursive"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "2xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+
+        .editorial-spacing {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        @media (min-width: 1024px) {
+            .editorial-spacing {
+                padding-top: 120px;
+                padding-bottom: 40px;
+            }
+        }
+
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(18, 18, 18, 0.9) 0%, rgba(18, 18, 18, 0.4) 100%);
+        }
+
+        @media (min-width: 1024px) {
+            .hero-gradient {
+                background: linear-gradient(to right, rgba(18, 18, 18, 0.8) 0%, rgba(18, 18, 18, 0.4) 50%, transparent 100%);
+            }
+        }
+        
+        #mobile-menu.active {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background font-body selection:bg-primary-accent/30 overflow-x-hidden">
+    <nav
+        class="fixed top-0 w-full z-50 bg-white/20 dark:bg-stone-900/10 backdrop-blur-xl shadow-sm border-b border-stone-200/50 dark:border-stone-800/50 transition-colors duration-300 font-['Plus_Jakarta_Sans'] " >
+        
+        
+        <div class="flex justify-between items-center px-8 py-2 max-w-screen-2xl mx-auto navbar-bg">
+            <a class="flex items-center gap-2 text-2xl font-black tracking-tighter  "
+                href="index.html">
+                <img src="logo.png" alt="Humane Foundation logo" width="50" class="block">
+                <span>Humane Foundation</span>
+            </a>
+            <div class="flex items-center gap-6">
+                <a href="index.html" class=" hover:text-yellow-200 transition-colors">Home</a>   
+                <a href="contact.html" class=" hover:text-yellow-200 transition-colors">Contact Us</a>  
+                <a href="about.html" class=" hover:text-yellow-200 transition-colors">About Us</a>   
+                 <a href="whoweare.html" class=" hover:text-yellow-200 transition-colors">Who We Are</a> 
+                 <a href="member.html" class=" hover:text-yellow-200 transition-colors">Board Members</a> 
+
+                <a href="donate.html"
+                    class="bg-[#FFD700] text-black px-7 py-2.5 rounded-xl font-bold text-sm tracking-tight hover:shadow-lg transition-all inline-block text-center">Donate</a>
+                
+            </div>
+        </div>
+         <div class="px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4 text-sm font-bold nav-2">
+            <div class="flex">
+<div class="me-10">✉ humanefoundation34@gmail.com</div>
+            <div>🌐 humanefoundation.in</div>
+            </div>
+            
+            <div class="flex gap-4">
+                <p>Reg No. Nagpur/0000190/2022</p>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="relative min-h-screen flex items-center overflow-hidden banner">
+            <div class="absolute inset-0 z-0 ">
+                <img class="w-full h-full object-cover banner-image" src="./2.jpeg" alt="Hero background" />
+                <div class="absolute inset-0 hero-gradient"></div>
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-8 w-full pt-32 pb-20 md:pt-20">
+                <div class="max-w-3xl text-center lg:text-left">
+                    <div class="flex items-center justify-center lg:justify-start gap-3 mb-6">
+                        <!-- <span class="w-12 h-[1px] bg-primary-accent"></span> -->
+                        <!-- <span class="font-headline font-bold tracking-widest text-primary-accent text-xs uppercase">Est. 2012</span> -->
+                    </div>
+                    <h1 class="text-white font-headline text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[1.1] mb-8">
+                        Every Child <br class="hidden md:block" />Deserves a <br /><span class="text-primary-accent">Future.</span>
+                    </h1>
+                    <p class="text-white/80 text-lg md:text-xl font-body max-w-xl mx-auto lg:mx-0 mb-10 md:mb-12 leading-relaxed">
+                        Registered NGO dedicated to supporting underprivileged orphans, youth, and children in slum and rural areas of Nagpur and Yavatmal.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 md:gap-5">
+                        <a href="donate.html" class="bg-primary-accent text-stone-950 px-8 md:px-10 py-4 md:py-5 rounded-xl font-headline font-bold text-lg hover:shadow-2xl transition-all transform hover:-translate-y-1 text-center">Donate Now</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdikgrEbuuxiD6ni_e7S01NXr-uldOuD9BlbQY0Fw9Yg2i4aw/viewform" target="_blank" class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 md:px-10 py-4 md:py-5 rounded-xl font-headline font-bold text-lg hover:bg-white/20 transition-all text-center">Join the Movement</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="editorial-spacing px-6 md:px-8 bg-stone-50">
+            <div class="max-w-screen-2xl mx-auto">
+                <div class="flex flex-col lg:flex-row justify-between items-start gap-10 lg:gap-16 mb-16 md:mb-24">
+                    <div class="max-w-3xl">
+                        <h2 class="font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-stone-900 mb-6 md:mb-8 leading-tight">Who We Are?</h2>
+                        <p class="text-stone-900 text-lg md:text-xl leading-relaxed max-w-2xl font-semibold mb-6">Humane Foundation is an Organization which is registered by Government of Maharashtra, India.</p>
+                        <p class="text-stone-500 text-base md:text-lg leading-relaxed max-w-2xl font-light">Our main goal is to offer support to underprivileged people like Orphans, Youth and Children of slum areas. We work directly with local schools and people in rural areas like Nagpur and Yavatmal District.</p>
+                    </div>
+                    <div class="pt-0 lg:pt-4 self-end lg:self-start">
+                        <div class="flex flex-col items-end">
+                            <span class="font-script text-stone-400 text-2xl md:text-3xl mb-2 transform rotate-3">Service for humanity</span>
+                            <div class="w-24 md:w-32 h-1 bg-primary-accent/20"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-16">
+                    <div class="group border-t border-stone-200 pt-8 md:pt-10">
+                        <img src="./img3.png" alt="">
+                        <div class="text-stone-300 font-headline text-3xl md:text-4xl mb-4 md:mb-6 font-bold group-hover:text-primary-accent transition-colors">01</div>
+                        <h3 class="font-headline text-xl md:text-2xl font-bold mb-4">Digital Literacy</h3>
+                        <p class="text-stone-500 leading-relaxed font-light text-sm md:text-base">We teach children in rural areas how to use computers, and even train their teachers to upgrade their technical knowledge.</p>
+                    </div>
+                    <div class="group border-t border-stone-200 pt-8 md:pt-10">
+                        <img src="./img1.png" alt="">
+                        <div class="text-stone-300 font-headline text-3xl md:text-4xl mb-4 md:mb-6 font-bold group-hover:text-primary-accent transition-colors">02</div>
+                        <h3 class="font-headline text-xl md:text-2xl font-bold mb-4">Hunger Relief</h3>
+                        <p class="text-stone-500 leading-relaxed font-light text-sm md:text-base">Our first mission is to provide leftover food from hotels and restaurants to the homeless and hungry people.</p>
+                    </div>
+                    <div class="group border-t border-stone-200 pt-8 md:pt-10">
+                        <img src="./img2.png" alt="">
+                        <div class="text-stone-300 font-headline text-3xl md:text-4xl mb-4 md:mb-6 font-bold group-hover:text-primary-accent transition-colors">03</div>
+                        <h3 class="font-headline text-xl md:text-2xl font-bold mb-4">Development</h3>
+                        <p class="text-stone-500 leading-relaxed font-light text-sm md:text-base">Focusing on tree plantation, theater workshops, and helping women become more independent and aware of their rights.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="editorial-spacing px-6 md:px-8 bg-white">
+            <div class="max-w-screen-2xl mx-auto">
+                <div class="mb-12 md:mb-20">
+                    <h2 class="font-headline text-3xl md:text-5xl font-bold tracking-tight text-stone-900">Current Initiatives</h2>
+                    <div class="h-1 w-16 md:w-20 bg-primary-accent mt-4"></div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-7 group relative h-[400px] md:h-[600px] overflow-hidden rounded-2xl">
+                        <img class="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="./regional.jpg" alt="Initiative" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 md:p-10 w-full">
+                            <span class="text-primary-accent font-bold tracking-widest uppercase text-xs mb-3 md:mb-4 block">Regional Focus</span>
+                            <h3 class="text-white font-headline text-2xl md:text-4xl font-bold mb-4">Nagpur & Yavatmal Outreach</h3>
+                            <p class="text-white/70 max-w-lg mb-4 text-sm md:text-base">Running successful programs in the city of Nagpur and surrounding rural areas to develop a more powerful society.</p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 flex flex-col gap-8">
+                        <div class="bg-stone-50 p-8 md:p-10 rounded-2xl border border-stone-200/60 h-full">
+                            <span class="text-stone-400 font-bold text-xs uppercase tracking-widest mb-6 block">Our Vision</span>
+                            <h3 class="font-headline text-2xl font-bold text-stone-900 mb-4">Worldwide Network</h3>
+                            <p class="text-stone-500 font-light leading-relaxed text-sm md:text-base">Creating a network of Donors to help children in rural areas, orphanages, and the sick or disabled.</p>
+                        </div>
+                        <div class="bg-primary-accent/5 p-8 md:p-10 rounded-2xl relative overflow-hidden group h-full">
+                            <div class="relative z-10">
+                                <h3 class="font-headline text-2xl font-bold text-stone-900 mb-4">Lifetime Membership</h3>
+                                <p class="text-stone-600 font-light leading-relaxed text-sm md:text-base">Join the efforts of Humane Foundation for free and share your experiences to encourage others.</p>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdikgrEbuuxiD6ni_e7S01NXr-uldOuD9BlbQY0Fw9Yg2i4aw/viewform" target="_blank" class="mt-8 bg-stone-950 text-white px-8 py-4 rounded-xl font-bold hover:bg-stone-800 transition-colors inline-block w-full sm:w-auto text-center">Join for Free</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="editorial-spacing px-6 md:px-8 bg-stone-50 overflow-hidden">
+            <div class="max-w-screen-2xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                    <div class="relative px-4 md:px-0">
+                        <div class="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
+                            <img class="w-full h-full object-cover" src="6.jpeg" alt="Mission" />
+                        </div>
+                        <div class="absolute -bottom-6 -right-2 md:-bottom-12 md:-right-12 bg-white p-6 md:p-10 rounded-2xl shadow-xl max-w-[280px] md:max-w-sm border border-stone-100">
+                            <p class="font-script text-primary-accent text-xl md:text-2xl mb-4">"Humanity is greatest."</p>
+                            <p class="text-stone-500 text-xs md:text-sm leading-relaxed italic mb-6">"The satisfaction that a person has in working for the benefit of humanity is the greatest one can hold."</p>
+                            <p class="font-bold text-stone-900 text-sm">— Team Humane</p>
+                        </div>
+                    </div>
+                    <div class="mt-12 lg:mt-0 lg:pl-12 text-center lg:text-left">
+                        <span class="text-stone-400 font-bold tracking-widest uppercase text-xs mb-6 block">Our Mission</span>
+                        <h3 class="font-headline text-4xl md:text-5xl font-extrabold text-stone-900 leading-tight mb-8 md:mb-10">Empowering Rural <br class="hidden md:block"/>Communities Together.</h3>
+                        <p class="text-stone-500 text-lg md:text-xl leading-relaxed mb-8 font-light">
+                            With the help of our team members and volunteers like you, we support local NGO’s in their work for the development of poor people. We hope our work will help to develop a more powerful, educated and aware society.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full font-sans border-t border-stone-200 mt-10">
+        
+
+        <div class=" px-6 md:px-8 py-10 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 relative bg-footer">
+            <div class="hidden md:block absolute left-1/2 top-10 bottom-10 w-px bg-white/30"></div>
+
+            <div class="flex flex-col gap-4">
+                <h3 class="font-bold underline decoration-1 underline-offset-4 text-lg">Head Office:</h3>
+                <div class="flex gap-4 items-start">
+                    <span class="material-symbols-outlined mt-1">location_on</span>
+                    <p class="leading-relaxed text-sm md:text-base">Plot No. 31, Bezon Bagh, Garden Layout,<br>Nagpur - 440004</p>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <span class="material-symbols-outlined ">call</span>
+                    <p class="font-bold text-base md:text-lg">+91 90213 39141</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <h3 class="font-bold underline decoration-1 underline-offset-4 text-lg">Branch Office:</h3>
+                <div class="flex gap-4 items-start">
+                    <span class="material-symbols-outlined mt-1">location_on</span>
+                    <p class="leading-relaxed text-sm md:text-base">D-10, Ambika Nagar, Nalanda Garden,<br>Yavatmal - 445001</p>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <span class="material-symbols-outlined ">call</span>
+                    <p class="font-bold text-base md:text-lg">+91 9689180409</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-toggle');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        });
+    </script>
+</body>
+
+</html>

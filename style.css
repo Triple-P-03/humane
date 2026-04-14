@@ -1,0 +1,138 @@
+
+
+.navbar-bg{
+    background-color: black !important;
+    color: white !important;
+}
+.nav-2{
+    background-color: #FFD700;
+}
+.banner{
+    /* padding-top: 80px; */
+    margin-top: 100px;
+}
+.banner-img{
+    background-position: center;
+}
+.bg-footer{
+    background-color: #FFD700;
+    color: black;
+}
+
+/* about page  */
+.about-us>span{
+    color: #FFD700;
+    font-size: 14px;
+}
+.about-us h1{
+    color: black;
+    font-size: 50px;
+    font-weight: 700;
+}
+.about-us h1 span{
+    color: #FFD700;
+   
+}
+.about-us  p{
+    color: rgb(101, 101, 101);
+    width: 60%;
+   
+}
+.about-icon{
+    background-color: rgb(248, 225, 181);
+    color: orange;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.about-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+   background-color: rgb(243, 243, 243);
+    box-shadow: 2px 2px rgb(227, 227, 227);
+    width: 20%;
+    border-radius: 10px;
+}
+.about-card h3{
+    font-weight: 700;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+/* contact page  */
+.contact-card{
+    width: 40%;
+    padding: 20px;
+  background-color: rgb(247, 244, 244);
+    border-radius: 10px;
+    height: 200px;
+    box-shadow: 2px 2px rgb(234, 233, 233);
+}
+.contact-card h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+.contact-card p{
+    width: 60%;
+    color: gray;
+    margin: 15px 0;
+}
+.contact-p{
+    color: black !important;
+}
+.contact-2{
+    height: 300px;
+}
+.contact-main h1{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.contact-main h1 span{
+    color: #FFD700;
+}
+
+/* who we are page  */
+.abcard1{
+    border-radius: 50%;
+}
+.who_we_are{
+    background-color: rgb(233, 232, 232);
+    padding-top: 200px;
+    padding-bottom: 80px;
+}
+
+.who_we_are span{
+    color: orange;
+}
+.who_we_are h1, .who_we h1{
+    font-size: 52px;
+    font-weight:800;
+}
+.who_we_are h1 span{
+    color: #FFD700;
+}
+.who_we_are p{
+    width: 60%;
+    color: gray;
+    margin: auto;
+}
+.who_we h1 span{
+    color: #FFD700;
+}
+
+/* member page  */
+
+.member-card{
+
+    width: 30%;
+    background-color: white;
+    border: 1px solid rgb(243, 241, 241);
+}

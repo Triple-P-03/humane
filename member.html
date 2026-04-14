@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Humane Foundation | Impact through Empathy</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Gloria+Hallelujah&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-accent": "#FFD700",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#fcf9f8",
+                        "on-background": "#121212",
+                        "stone": {
+                            50: "#fcfcfc", 100: "#f5f5f4", 200: "#e7e5e4", 400: "#a8a29e",
+                            500: "#78716c", 600: "#57534e", 800: "#292524", 900: "#1c1917", 950: "#0c0a09"
+                        }
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "script": ["Gloria Hallelujah", "cursive"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "2xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+
+        .editorial-spacing {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        @media (min-width: 1024px) {
+            .editorial-spacing {
+                padding-top: 120px;
+                padding-bottom: 40px;
+            }
+        }
+
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(18, 18, 18, 0.9) 0%, rgba(18, 18, 18, 0.4) 100%);
+        }
+
+        @media (min-width: 1024px) {
+            .hero-gradient {
+                background: linear-gradient(to right, rgba(18, 18, 18, 0.8) 0%, rgba(18, 18, 18, 0.4) 50%, transparent 100%);
+            }
+        }
+        
+        #mobile-menu.active {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background font-body selection:bg-primary-accent/30 overflow-x-hidden">
+    <nav
+        class="fixed top-0 w-full z-50 bg-white/20 dark:bg-stone-900/10 backdrop-blur-xl shadow-sm border-b border-stone-200/50 dark:border-stone-800/50 transition-colors duration-300 font-['Plus_Jakarta_Sans'] " >
+        
+        
+        <div class="flex justify-between items-center px-8 py-2 max-w-screen-2xl mx-auto navbar-bg">
+            <a class="flex items-center gap-2 text-2xl font-black tracking-tighter  "
+                href="index.html">
+                <img src="logo.png" alt="Humane Foundation logo" width="50" class="block">
+                <span>Humane Foundation</span>
+            </a>
+            <div class="flex items-center gap-6">
+                 <a href="index.html" class=" hover:text-yellow-200 transition-colors">Home</a>   
+                <a href="contact.html" class=" hover:text-yellow-200 transition-colors">Contact Us</a>   
+                <a href="about.html" class=" hover:text-yellow-200 transition-colors">About Us</a>   
+                 <a href="whoweare.html" class=" hover:text-yellow-200 transition-colors">Who We Are</a> 
+                 <a href="member.html" class=" hover:text-yellow-200 transition-colors">Board Members</a> 
+
+                <a href="donate.html"
+                    class="bg-[#FFD700] text-black px-7 py-2.5 rounded-xl font-bold text-sm tracking-tight hover:shadow-lg transition-all inline-block text-center">Donate</a>
+                
+            </div>
+        </div>
+         <div class="px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4 text-sm font-bold nav-2">
+            <div class="flex">
+<div class="me-10">✉ humanefoundation34@gmail.com</div>
+            <div>🌐 humanefoundation.in</div>
+            </div>
+            
+            <div class="flex gap-4">
+                <p>Reg No. Nagpur/0000190/2022</p>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="text-center who_we_are ">
+            <span>Leadership</span>
+            <h1>Board <span>Members</span> </h1>
+            <p>The dedicated leaders guiding Humane Foundation's <br> mission to create lasting impact.</p>
+        </section>
+
+         <section class="flex  justify-center gap-10 mt-10 flex-wrap">
+            <div class="about-card member-card text-center ">
+                <div class="about-icon abcard1">
+                HF
+
+                </div>
+                <h3>Founder & President</h3>
+                <p>Leading the vision and strategic direction of Humane Foundation since 2012.</p>
+
+            </div>
+
+             <div class="about-card member-card text-center ">
+                <div class="about-icon abcard1">
+                  VP
+
+                </div>
+                <h3>Vice President</h3>
+                <p>Overseeing operations and community outreach programs across districts.</p>
+
+            </div>
+
+             <div class="about-card member-card text-center ">
+                <div class="about-icon abcard1">
+                  SE
+
+                </div>
+                <h3>Secretary</h3>
+                <p>Managing organizational affairs, documentation, and compliance.</p>
+
+            </div>
+
+             <div class="about-card member-card  text-center ">
+                <div class="about-icon abcard1">
+                TR
+
+                </div>
+                <h3>Treasurer</h3>
+                <p>Handling financial planning, auditing, and transparent fund management.</p>
+
+            </div>
+             <div class="about-card member-card  text-center ">
+                <div class="about-icon abcard1">
+                JS
+
+                </div>
+                <h3>Joint Secretary</h3>
+                <p>Assisting in coordination between departments and volunteer management.</p>
+
+            </div>
+             <div class="about-card member-card  text-center ">
+                <div class="about-icon abcard1">
+                AM
+
+                </div>
+                <h3>Advisory Member</h3>
+                <p>Providing expert guidance on social welfare policies and partnerships.</p>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full font-sans border-t border-stone-200 mt-10">
+        
+
+        <div class=" px-6 md:px-8 py-10 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 relative bg-footer">
+            <div class="hidden md:block absolute left-1/2 top-10 bottom-10 w-px bg-white/30"></div>
+
+            <div class="flex flex-col gap-4">
+                <h3 class="font-bold underline decoration-1 underline-offset-4 text-lg">Head Office:</h3>
+                <div class="flex gap-4 items-start">
+                    <span class="material-symbols-outlined mt-1">location_on</span>
+                    <p class="leading-relaxed text-sm md:text-base">Plot No. 31, Bezon Bagh, Garden Layout,<br>Nagpur - 440004</p>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <span class="material-symbols-outlined ">call</span>
+                    <p class="font-bold text-base md:text-lg">+91 90213 39141</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <h3 class="font-bold underline decoration-1 underline-offset-4 text-lg">Branch Office:</h3>
+                <div class="flex gap-4 items-start">
+                    <span class="material-symbols-outlined mt-1">location_on</span>
+                    <p class="leading-relaxed text-sm md:text-base">D-10, Ambika Nagar, Nalanda Garden,<br>Yavatmal - 445001</p>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <span class="material-symbols-outlined ">call</span>
+                    <p class="font-bold text-base md:text-lg">+91 9689180409</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-toggle');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        });
+    </script>
+</body>
+
+</html>
