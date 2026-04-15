@@ -4,208 +4,138 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Humane Foundation | Impact through Empathy</title>
+    <title>Humane Foundation | About Us</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Gloria+Hallelujah&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Gloria+Hallelujah&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
     <script id="tailwind-config">
         tailwind.config = {
-            darkMode: "class",
             theme: {
                 extend: {
                     colors: {
                         "primary-accent": "#FFD700",
-                        "surface-container-lowest": "#ffffff",
                         "background": "#fcf9f8",
                         "on-background": "#121212",
                         "stone": {
                             50: "#fcfcfc", 100: "#f5f5f4", 200: "#e7e5e4", 400: "#a8a29e",
-                            500: "#78716c", 600: "#57534e", 800: "#292524", 900: "#1c1917", 950: "#0c0a09"
+                            500: "#78716c", 600: "#57534e", 800: "#292524", 900: "#1c1917"
                         }
                     },
                     fontFamily: {
                         "headline": ["Plus Jakarta Sans", "sans-serif"],
-                        "body": ["Inter", "sans-serif"],
-                        "script": ["Gloria Hallelujah", "cursive"]
-                    },
-                    borderRadius: { "DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "2xl": "1.5rem", "full": "9999px" },
-                },
-            },
+                        "body": ["Inter", "sans-serif"]
+                    }
+                }
+            }
         }
     </script>
-    <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-            vertical-align: middle;
-        }
-
-        .editorial-spacing {
-            padding-top: 60px;
-            padding-bottom: 60px;
-        }
-
-        @media (min-width: 1024px) {
-            .editorial-spacing {
-                padding-top: 120px;
-                padding-bottom: 40px;
-            }
-        }
-
-        .glass-nav {
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-        }
-
-        .hero-gradient {
-            background: linear-gradient(to bottom, rgba(18, 18, 18, 0.9) 0%, rgba(18, 18, 18, 0.4) 100%);
-        }
-
-        @media (min-width: 1024px) {
-            .hero-gradient {
-                background: linear-gradient(to right, rgba(18, 18, 18, 0.8) 0%, rgba(18, 18, 18, 0.4) 50%, transparent 100%);
-            }
-        }
-        
-        #mobile-menu.active {
-            display: flex;
-        }
-    </style>
 </head>
 
 <body class="bg-background text-on-background font-body selection:bg-primary-accent/30 overflow-x-hidden">
-    <nav
-        class="fixed top-0 w-full z-50 bg-white/20 dark:bg-stone-900/10 backdrop-blur-xl shadow-sm border-b border-stone-200/50 dark:border-stone-800/50 transition-colors duration-300 font-['Plus_Jakarta_Sans'] " >
-        
-        
-        <div class="flex justify-between items-center px-8 py-2 max-w-screen-2xl mx-auto navbar-bg">
-            <a class="flex items-center gap-2 text-2xl font-black tracking-tighter  "
-                href="index.html">
-                <img src="logo.png" alt="Humane Foundation logo" width="50" class="block">
-                <span>Humane Foundation</span>
-            </a>
-            <div class="flex items-center gap-6">
-                 <a href="index.html" class=" hover:text-yellow-200 transition-colors">Home</a>   
-                <a href="contact.html" class=" hover:text-yellow-200 transition-colors">Contact Us</a>   
-                <a href="about.html" class=" hover:text-yellow-200 transition-colors">About Us</a>   
-                 <a href="whoweare.html" class=" hover:text-yellow-200 transition-colors">Who We Are</a> 
-                 <a href="member.html" class=" hover:text-yellow-200 transition-colors">Board Members</a> 
+    <nav class="fixed top-0 w-full z-50 font-['Plus_Jakarta_Sans'] transition-all duration-300">
+        <div class="hidden sm:flex bg-stone-900/90 backdrop-blur-md text-white px-8 py-2 justify-between items-center text-xs font-medium">
+            <div class="flex gap-6">
+                <span class="flex items-center gap-2"><i class="fa-regular fa-envelope text-primary-accent"></i> humanefoundation34@gmail.com</span>
+                <span class="flex items-center gap-2"><i class="fa-solid fa-globe text-primary-accent"></i> humanefoundation.in</span>
+            </div>
+            <span>Reg No. Nagpur/0000190/2022</span>
+        </div>
 
-                <a href="donate.html"
-                    class="bg-[#FFD700] text-black px-7 py-2.5 rounded-xl font-bold text-sm tracking-tight hover:shadow-lg transition-all inline-block text-center">Donate</a>
-                
+        <div class="bg-white/70 backdrop-blur-lg border-b border-white/20 shadow-sm">
+            <div class="max-w-screen-2xl mx-auto px-6 lg:px-8 flex justify-between items-center h-16 md:h-20">
+                <a class="flex items-center gap-3 text-xl font-black tracking-tighter text-stone-900" href="index.html">
+                    <div class="w-10 h-10 bg-primary-accent rounded-lg flex items-center justify-center text-xs">HF</div>
+                    <span class="uppercase">Humane Foundation</span>
+                </a>
+
+                <div class="hidden lg:flex items-center gap-8 font-bold text-sm text-stone-800">
+                    <a href="index.html" class="hover:text-yellow-600 transition-colors">Home</a>
+                    <a href="about.html" class="text-yellow-600">About Us</a>
+                    <a href="whoweare.html" class="hover:text-yellow-600 transition-colors">Who We Are</a>
+                    <a href="member.html" class="hover:text-yellow-600 transition-colors">Board Members</a>
+                    <a href="contact.html" class="hover:text-yellow-600 transition-colors">Contact Us</a>
+                    <a href="donate.html" class="bg-primary-accent text-black px-7 py-2.5 rounded-xl">Donate</a>
+                </div>
+
+                <button id="menu-toggle" class="lg:hidden p-2 text-stone-900"><span class="material-symbols-outlined text-3xl">menu</span></button>
             </div>
         </div>
-         <div class="px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4 text-sm font-bold nav-2">
-            <div class="flex">
-<div class="me-10">✉ humanefoundation34@gmail.com</div>
-            <div>🌐 humanefoundation.in</div>
-            </div>
-            
-            <div class="flex gap-4">
-                <p>Reg No. Nagpur/0000190/2022</p>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-            </div>
+
+        <div id="mobile-menu" class="hidden flex-col bg-white p-6 gap-4 font-bold lg:hidden shadow-2xl border-b border-stone-200">
+            <a href="index.html" class="py-3 border-b border-stone-100">Home</a>
+            <a href="about.html" class="py-3 border-b border-stone-100 text-yellow-600">About Us</a>
+            <a href="whoweare.html" class="py-3 border-b border-stone-100">Who We Are</a>
+            <a href="member.html" class="py-3 border-b border-stone-100">Board Members</a>
+            <a href="contact.html" class="py-3 border-b border-stone-100">Contact Us</a>
+            <a href="donate.html" class="bg-primary-accent text-black text-center py-4 rounded-xl mt-4">Donate Now</a>
         </div>
     </nav>
 
-    <main>
-        <section class="flex pt-40 pb-28 px-20 gap-10 ">
-            <div class="flex flex-col justify-center w-1/2 about-us">
-                <span>ABOUT US</span>
-                <h1>Service for <span>Humanity</span> </h1>
-                <p>Humane Foundation is an Organization registered by the Government of Maharashtra, India. Since 2012, we have been working towards empowering underprivileged communities through education, nutrition, and social awareness programs.</p>
+    <main class="max-w-7xl mx-auto">
+        <section class="flex flex-col lg:flex-row pt-32 md:pt-48 pb-16 px-6 lg:px-20 gap-10 items-center">
+            <div class="flex flex-col justify-center w-full lg:w-1/2 space-y-4">
+                <span class="text-yellow-600 font-bold tracking-widest text-sm">ABOUT US</span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-stone-900 leading-tight">Service for <span class="text-yellow-500">Humanity</span></h1>
+                <p class="text-stone-600 text-lg leading-relaxed">
+                    Humane Foundation is an Organization registered by the Government of Maharashtra, India. Since 2012, we have been working towards empowering underprivileged communities through education, nutrition, and social awareness programs.
+                </p>
             </div>
-            <div class="w-1/2">
-                <img src="./regional.jpg" alt="" class="rounded-lg">
-            </div>
-        </section>
-
-        <section class="about-us">
-            <h1 class="text-center">Our Core <span>Values</span> </h1>
-        </section>
-
-        <section class="flex  justify-center gap-10 mt-10">
-            <div class="about-card  text-center ">
-                <div class="about-icon">
-                    <i class="fa-regular fa-heart"></i>
-
-                </div>
-                <h3>Compassion</h3>
-                <p>Every action is driven by genuine care for those we serve.</p>
-
-            </div>
-
-             <div class="about-card  text-center ">
-                <div class="about-icon">
-                   <i class="fa-regular fa-user"></i>
-
-                </div>
-                <h3>Community</h3>
-                <p>Working together with local communities for sustainable change.</p>
-
-            </div>
-
-             <div class="about-card  text-center ">
-                <div class="about-icon">
-                    <i class="fa-solid fa-book"></i>
-
-                </div>
-                <h3>Education</h3>
-                <p>Empowering through knowledge and digital literacy.</p>
-
-            </div>
-
-             <div class="about-card  text-center ">
-                <div class="about-icon">
-                 <i class="fa-solid fa-leaf"></i>
-
-                </div>
-                <h3>Sustainability</h3>
-                <p>Building solutions that last for generations to come.</p>
-
+            <div class="w-full lg:w-1/2">
+                <img src="./regional.jpg" alt="About Us" class="rounded-3xl shadow-2xl w-full h-[300px] md:h-[450px] object-cover">
             </div>
         </section>
 
-       
+        <section class="px-6 py-10">
+            <h2 class="text-3xl md:text-4xl font-black text-center mb-12">Our Core <span class="text-yellow-500">Values</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-3xl border border-stone-100 shadow-sm hover:shadow-xl transition-all text-center group">
+                    <div class="w-16 h-16 bg-stone-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-yellow-400 group-hover:text-white transition-colors">
+                        <i class="fa-regular fa-heart text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Compassion</h3>
+                    <p class="text-stone-500 text-sm">Every action is driven by genuine care for those we serve.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border border-stone-100 shadow-sm hover:shadow-xl transition-all text-center group">
+                    <div class="w-16 h-16 bg-stone-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-yellow-400 group-hover:text-white transition-colors">
+                        <i class="fa-regular fa-user text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Community</h3>
+                    <p class="text-stone-500 text-sm">Working together with local communities for sustainable change.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border border-stone-100 shadow-sm hover:shadow-xl transition-all text-center group">
+                    <div class="w-16 h-16 bg-stone-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-yellow-400 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-book text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Education</h3>
+                    <p class="text-stone-500 text-sm">Empowering through knowledge and digital literacy.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border border-stone-100 shadow-sm hover:shadow-xl transition-all text-center group">
+                    <div class="w-16 h-16 bg-stone-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-yellow-400 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-leaf text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Sustainability</h3>
+                    <p class="text-stone-500 text-sm">Building solutions that last for generations to come.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="w-full font-sans border-t border-stone-200 mt-10">
-        
-
-        <div class=" px-6 md:px-8 py-10 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 relative bg-footer">
-            <div class="hidden md:block absolute left-1/2 top-10 bottom-10 w-px bg-white/30"></div>
-
-            <div class="flex flex-col gap-4">
-                <h3 class="font-bold underline decoration-1 underline-offset-4 text-lg">Head Office:</h3>
-                <div class="flex gap-4 items-start">
-                    <span class="material-symbols-outlined mt-1">location_on</span>
-                    <p class="leading-relaxed text-sm md:text-base">Plot No. 31, Bezon Bagh, Garden Layout,<br>Nagpur - 440004</p>
-                </div>
-                <div class="flex gap-4 items-center">
-                    <span class="material-symbols-outlined ">call</span>
-                    <p class="font-bold text-base md:text-lg">+91 90213 39141</p>
-                </div>
+    <footer class="bg-stone-900 text-white mt-20">
+        <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="space-y-4">
+                <h3 class="font-bold text-lg border-l-4 border-yellow-400 pl-3">Head Office</h3>
+                <p class="text-stone-400 text-sm">Plot No. 31, Bezon Bagh, Garden Layout, Nagpur - 440004</p>
+                <p class="font-bold">+91 90213 39141</p>
             </div>
-
-            <div class="flex flex-col gap-4">
-                <h3 class="font-bold underline decoration-1 underline-offset-4 text-lg">Branch Office:</h3>
-                <div class="flex gap-4 items-start">
-                    <span class="material-symbols-outlined mt-1">location_on</span>
-                    <p class="leading-relaxed text-sm md:text-base">D-10, Ambika Nagar, Nalanda Garden,<br>Yavatmal - 445001</p>
-                </div>
-                <div class="flex gap-4 items-center">
-                    <span class="material-symbols-outlined ">call</span>
-                    <p class="font-bold text-base md:text-lg">+91 9689180409</p>
-                </div>
+            <div class="space-y-4">
+                <h3 class="font-bold text-lg border-l-4 border-yellow-400 pl-3">Branch Office</h3>
+                <p class="text-stone-400 text-sm">D-10, Ambika Nagar, Nalanda Garden, Yavatmal - 445001</p>
+                <p class="font-bold">+91 96891 80409</p>
             </div>
         </div>
     </footer>
@@ -213,12 +143,10 @@
     <script>
         const btn = document.getElementById('menu-toggle');
         const menu = document.getElementById('mobile-menu');
-
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
             menu.classList.toggle('flex');
         });
     </script>
 </body>
-
-</html>
+</html>     

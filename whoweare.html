@@ -6,13 +6,10 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Humane Foundation | Impact through Empathy</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Gloria+Hallelujah&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Gloria+Hallelujah&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link rel="stylesheet" href="./style.css">
+    
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -20,7 +17,6 @@
                 extend: {
                     colors: {
                         "primary-accent": "#FFD700",
-                        "surface-container-lowest": "#ffffff",
                         "background": "#fcf9f8",
                         "on-background": "#121212",
                         "stone": {
@@ -31,176 +27,165 @@
                     fontFamily: {
                         "headline": ["Plus Jakarta Sans", "sans-serif"],
                         "body": ["Inter", "sans-serif"],
-                        "script": ["Gloria Hallelujah", "cursive"]
                     },
-                    borderRadius: { "DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "2xl": "1.5rem", "full": "9999px" },
                 },
             },
         }
     </script>
     <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-            vertical-align: middle;
-        }
-
-        .editorial-spacing {
-            padding-top: 60px;
-            padding-bottom: 60px;
-        }
-
-        @media (min-width: 1024px) {
-            .editorial-spacing {
-                padding-top: 120px;
-                padding-bottom: 40px;
-            }
-        }
-
-        .glass-nav {
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-        }
-
-        .hero-gradient {
-            background: linear-gradient(to bottom, rgba(18, 18, 18, 0.9) 0%, rgba(18, 18, 18, 0.4) 100%);
-        }
-
-        @media (min-width: 1024px) {
-            .hero-gradient {
-                background: linear-gradient(to right, rgba(18, 18, 18, 0.8) 0%, rgba(18, 18, 18, 0.4) 50%, transparent 100%);
-            }
-        }
-        
-        #mobile-menu.active {
-            display: flex;
-        }
+        .material-symbols-outlined { vertical-align: middle; }
+        /* Smooth transition for mobile menu */
+        #mobile-menu.active { display: flex; }
     </style>
 </head>
 
 <body class="bg-background text-on-background font-body selection:bg-primary-accent/30 overflow-x-hidden">
-    <nav
-        class="fixed top-0 w-full z-50 bg-white/20 dark:bg-stone-900/10 backdrop-blur-xl shadow-sm border-b border-stone-200/50 dark:border-stone-800/50 transition-colors duration-300 font-['Plus_Jakarta_Sans'] " >
-        
-        
-        <div class="flex justify-between items-center px-8 py-2 max-w-screen-2xl mx-auto navbar-bg">
-            <a class="flex items-center gap-2 text-2xl font-black tracking-tighter  "
-                href="index.html">
-                <img src="logo.png" alt="Humane Foundation logo" width="50" class="block">
-                <span>Humane Foundation</span>
-            </a>
-            <div class="flex items-center gap-6">
-                 <a href="index.html" class=" hover:text-yellow-200 transition-colors">Home</a>   
-                <a href="contact.html" class=" hover:text-yellow-200 transition-colors">Contact Us</a>   
-                <a href="about.html" class=" hover:text-yellow-200 transition-colors">About Us</a>   
-                 <a href="whoweare.html" class=" hover:text-yellow-200 transition-colors">Who We Are</a> 
-                 <a href="member.html" class=" hover:text-yellow-200 transition-colors">Board Members</a> 
-
-                <a href="donate.html"
-                    class="bg-[#FFD700] text-black px-7 py-2.5 rounded-xl font-bold text-sm tracking-tight hover:shadow-lg transition-all inline-block text-center">Donate</a>
-                
+     <nav class="fixed top-0 w-full z-50 font-['Plus_Jakarta_Sans'] transition-all duration-300">
+    
+    <div class="hidden sm:flex bg-stone-900/90 backdrop-blur-md text-white px-8 py-2 justify-between items-center text-xs font-medium border-b border-white/10">
+        <div class="flex gap-6">
+            <span class="flex items-center gap-2">
+                <i class="fa-regular fa-envelope text-primary-accent"></i> 
+                humanefoundation34@gmail.com
+            </span>
+            <span class="flex items-center gap-2">
+                <i class="fa-solid fa-globe text-primary-accent"></i> 
+                humanefoundation.in
+            </span>
+        </div>
+        <div class="flex gap-4 items-center">
+            <span class="opacity-70">Reg No. Nagpur/0000190/2022</span>
+            <div class="flex gap-4 ml-4 border-l border-white/20 pl-4">
+                <a href="https://www.facebook.com/share/18fXXswoH8/" target="_blank" rel="noopener noreferrer" class="hover:text-primary-accent transition-all hover:scale-110">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/humanefoundation.in?igsh=NHdhazRlM3FuOXBl" target="_blank" rel="noopener noreferrer" class="hover:text-primary-accent transition-all hover:scale-110">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="hover:text-primary-accent transition-all hover:scale-110">
+                    <i class="fab fa-twitter"></i>
+                </a>
             </div>
         </div>
-         <div class="px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4 text-sm font-bold nav-2">
-            <div class="flex">
-<div class="me-10">✉ humanefoundation34@gmail.com</div>
-            <div>🌐 humanefoundation.in</div>
-            </div>
+    </div>
+
+    <div class="bg-white/70 backdrop-blur-lg border-b border-white/20 shadow-sm">
+        <div class="max-w-screen-2xl mx-auto px-6 lg:px-8 flex justify-between items-center h-20">
             
-            <div class="flex gap-4">
-                <p>Reg No. Nagpur/0000190/2022</p>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-            </div>
-        </div>
-    </nav>
+            <a class="flex items-center gap-3 text-xl font-black tracking-tighter text-stone-900" href="index.html">
+                <img src="logo.png" alt="Humane Foundation Logo" class="h-12 w-auto">
+                <span class="hidden md:block uppercase">Humane Foundation</span>
+            </a>
 
-    <main >
-        <section class="text-center who_we_are ">
-            <span>Our Work</span>
-            <h1>What We <span>Do</span> </h1>
-            <p>Our approach is modeled around bringing change at all levels — from <br>individual families to government policy.</p>
+            <div class="hidden lg:flex items-center gap-8 font-bold text-sm text-stone-800">
+                <a href="index.html" class="hover:text-yellow-600 transition-colors">Home</a>
+                <a href="about.html" class="hover:text-yellow-600 transition-colors">About Us</a>
+                <a href="whoweare.html" class="hover:text-yellow-600 transition-colors">Who We Are</a>
+                <a href="member.html" class="hover:text-yellow-600 transition-colors">Board Members</a>
+                <a href="contact.html" class="hover:text-yellow-600 transition-colors">Contact Us</a>
+                
+                <a href="donate.html" class="bg-[#FFD700] text-black px-7 py-2.5 rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300">
+                    Donate
+                </a>
+            </div>
+
+            <button id="menu-toggle" class="lg:hidden p-2 text-stone-900 focus:outline-none">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden flex-col bg-white/95 backdrop-blur-xl p-6 gap-4 font-bold lg:hidden shadow-2xl border-b border-stone-200 animate-in fade-in slide-in-from-top-4 duration-300">
+        <a href="index.html" class="py-3 border-b border-stone-100 flex justify-between items-center">Home <i class="fa-solid fa-chevron-right text-[10px] opacity-30"></i></a>
+        <a href="about.html" class="py-3 border-b border-stone-100 flex justify-between items-center">About Us <i class="fa-solid fa-chevron-right text-[10px] opacity-30"></i></a>
+        <a href="whoweare.html" class="py-3 border-b border-stone-100 flex justify-between items-center">Who We Are <i class="fa-solid fa-chevron-right text-[10px] opacity-30"></i></a>
+        <a href="member.html" class="py-3 border-b border-stone-100 flex justify-between items-center">Board Members <i class="fa-solid fa-chevron-right text-[10px] opacity-30"></i></a>
+        <a href="contact.html" class="py-3 border-b border-stone-100 flex justify-between items-center">Contact Us <i class="fa-solid fa-chevron-right text-[10px] opacity-30"></i></a>
+        
+        <a href="donate.html" class="bg-[#FFD700] text-black text-center py-4 rounded-xl mt-4 shadow-md active:scale-95 transition-transform">
+            Donate Now
+        </a>
+        
+        <div class="flex justify-center gap-6 pt-4 text-stone-500">
+            <a href="https://www.facebook.com/share/18fXXswoH8/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook text-xl"></i></a>
+            <a href="https://www.instagram.com/humanefoundation.in?igsh=NHdhazRlM3FuOXBl" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram text-xl"></i></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter text-xl"></i></a>
+        </div>
+    </div>
+</nav>   
+
+    <main class="pt-24 md:pt-40">
+        <section class="text-center px-6">
+            <span class="text-yellow-600 font-bold tracking-widest uppercase text-xs">Our Work</span>
+            <h1 class="text-4xl md:text-6xl font-black text-stone-900 mt-2 mb-4">What We <span class="text-yellow-500">Do</span></h1>
+            <p class="max-w-2xl mx-auto text-stone-600 text-sm md:text-lg">Our approach is modeled around bringing change at all levels — from individual families to government policy.</p>
         </section>
 
-        <section class="mt-20">
-            <div class="text-center who_we">
- <h1>Our <span>Approach</span> </h1>
-            <p class="w-1/2 m-auto">We work with parents, teachers, communities, and governments to create an ecosystem where children are the nation's priority.</p>
-
+        <section class="mt-20 px-6 max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our <span class="text-yellow-500">Approach</span></h2>
+                <p class="max-w-lg mx-auto text-stone-500">We work with parents, teachers, communities, and governments to create an ecosystem where children are the nation's priority.</p>
             </div>
            
-             <section class="flex  justify-center gap-10 mt-10">
-            <div class="about-card  text-center ">
-                <div class="about-icon abcard1">
-                <i class="fa-solid fa-user"></i>
-
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-3xl border border-stone-100 shadow-sm hover:shadow-xl transition-all text-center">
+                    <div class="w-16 h-16 bg-stone-100 rounded-2xl flex items-center justify-center mx-auto mb-6 text-yellow-600 text-2xl">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Family</h3>
+                    <p class="text-stone-500 text-sm">Changing behaviors, attitudes & practices towards children.</p>
                 </div>
-                <h3>Family</h3>
-                <p>Changing behaviors, attitudes & practices towards children.</p>
 
-            </div>
-
-             <div class="about-card  text-center ">
-                <div class="about-icon abcard1">
-                   <i class="fa-solid fa-users"></i>
-
+                <div class="bg-white p-8 rounded-3xl border border-stone-100 shadow-sm hover:shadow-xl transition-all text-center">
+                    <div class="w-16 h-16 bg-stone-100 rounded-2xl flex items-center justify-center mx-auto mb-6 text-yellow-600 text-2xl">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Community</h3>
+                    <p class="text-stone-500 text-sm">Mobilizing stakeholders like teachers and village committees.</p>
                 </div>
-                <h3>Community</h3>
-                <p>Mobilizing stakeholders like teachers and village committees.</p>
 
-            </div>
-
-             <div class="about-card  text-center ">
-                <div class="about-icon abcard1">
-                   <i class="fa-solid fa-globe"></i>
-
+                <div class="bg-white p-8 rounded-3xl border border-stone-100 shadow-sm hover:shadow-xl transition-all text-center">
+                    <div class="w-16 h-16 bg-stone-100 rounded-2xl flex items-center justify-center mx-auto mb-6 text-yellow-600 text-2xl">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Public</h3>
+                    <p class="text-stone-500 text-sm">Sensitizing society to prioritize children's welfare.</p>
                 </div>
-                <h3>Public</h3>
-                <p>Sensitizing society to prioritize children's welfare.</p>
 
-            </div>
-
-             <div class="about-card  text-center ">
-                <div class="about-icon abcard1">
-                <i class="fa-solid fa-building-columns"></i>
-
+                <div class="bg-white p-8 rounded-3xl border border-stone-100 shadow-sm hover:shadow-xl transition-all text-center">
+                    <div class="w-16 h-16 bg-stone-100 rounded-2xl flex items-center justify-center mx-auto mb-6 text-yellow-600 text-2xl">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Government</h3>
+                    <p class="text-stone-500 text-sm">Advocating for policy changes at district and state levels.</p>
                 </div>
-                <h3>Government</h3>
-                <p>Advocating for policy changes at district and state levels.</p>
-
             </div>
-        </section>
-
         </section>
     </main>
 
-    <footer class="w-full font-sans border-t border-stone-200 mt-10">
-        
-
-        <div class=" px-6 md:px-8 py-10 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 relative bg-footer">
-            <div class="hidden md:block absolute left-1/2 top-10 bottom-10 w-px bg-white/30"></div>
-
-            <div class="flex flex-col gap-4">
-                <h3 class="font-bold underline decoration-1 underline-offset-4 text-lg">Head Office:</h3>
-                <div class="flex gap-4 items-start">
-                    <span class="material-symbols-outlined mt-1">location_on</span>
-                    <p class="leading-relaxed text-sm md:text-base">Plot No. 31, Bezon Bagh, Garden Layout,<br>Nagpur - 440004</p>
+    <footer class="w-full font-sans border-t border-stone-200 mt-20 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="space-y-4">
+                <h3 class="font-bold text-lg text-stone-900 underline decoration-yellow-400 decoration-2 underline-offset-8">Head Office:</h3>
+                <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-yellow-600">location_on</span>
+                    <p class="text-stone-600">Plot No. 31, Bezon Bagh, Garden Layout, Nagpur - 440004</p>
                 </div>
                 <div class="flex gap-4 items-center">
-                    <span class="material-symbols-outlined ">call</span>
-                    <p class="font-bold text-base md:text-lg">+91 90213 39141</p>
+                    <span class="material-symbols-outlined text-yellow-600">call</span>
+                    <p class="font-bold">+91 90213 39141</p>
                 </div>
             </div>
 
-            <div class="flex flex-col gap-4">
-                <h3 class="font-bold underline decoration-1 underline-offset-4 text-lg">Branch Office:</h3>
-                <div class="flex gap-4 items-start">
-                    <span class="material-symbols-outlined mt-1">location_on</span>
-                    <p class="leading-relaxed text-sm md:text-base">D-10, Ambika Nagar, Nalanda Garden,<br>Yavatmal - 445001</p>
+            <div class="space-y-4">
+                <h3 class="font-bold text-lg text-stone-900 underline decoration-yellow-400 decoration-2 underline-offset-8">Branch Office:</h3>
+                <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-yellow-600">location_on</span>
+                    <p class="text-stone-600">D-10, Ambika Nagar, Nalanda Garden, Yavatmal - 445001</p>
                 </div>
                 <div class="flex gap-4 items-center">
-                    <span class="material-symbols-outlined ">call</span>
-                    <p class="font-bold text-base md:text-lg">+91 9689180409</p>
+                    <span class="material-symbols-outlined text-yellow-600">call</span>
+                    <p class="font-bold">+91 96891 80409</p>
                 </div>
             </div>
         </div>
@@ -216,5 +201,4 @@
         });
     </script>
 </body>
-
 </html>
